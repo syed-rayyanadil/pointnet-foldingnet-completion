@@ -1,5 +1,10 @@
 import torch
-from pytorch3d.loss import chamfer_distance
+import importlib
+
+try:
+    chamfer_distance = importlib.import_module("pytorch3d.loss").chamfer_distance
+except ImportError:
+    chamfer_distance = None
 
 
 def chamfer_loss(pred, gt):
@@ -13,5 +18,11 @@ def chamfer_loss(pred, gt):
     Returns:
         scalar loss value
     """
-    loss, _ = chamfer_distance(pred, gt)
-    return loss
+    if chamfer_distance is not None:
+        loss, _ = chamfer_distance(pred, gt)
+        return loss
+
+    pairwise_distances = torch.cdist(pred, gt)
+    pred_to_gt = pairwise_distances.min(dim=2).values.mean()
+    gt_to_pred = pairwise_distances.min(dim=1).values.mean()
+    return pred_to_gt + gt_to_pred

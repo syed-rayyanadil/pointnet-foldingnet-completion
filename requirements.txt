@@ -1,5 +1,6 @@
 torch==2.1.2
 pytorch3d
+torch-geometric
 numpy
 matplotlib
 tqdm
