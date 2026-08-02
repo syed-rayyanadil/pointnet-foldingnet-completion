@@ -1,6 +1,8 @@
-**pycache**/
+__pycache__/
+**/__pycache__/
 *.pyc
+.DS_Store
 .venv/
-data/
+data/ModelNet40/
 checkpoints/
 results/
