@@ -113,7 +113,8 @@ def visualize(args):
     # Inference
     with torch.no_grad():
         partial_input = partial.unsqueeze(0).to(device)  # [1, 1024, 3]
-        predicted = model(partial_input)                  # [1, 2048, 3]
+        outputs = model(partial_input)
+        predicted = outputs["predicted_cloud"] if isinstance(outputs, dict) else outputs  # [1, 2048, 3]
 
     # Convert to numpy for plotting
     partial_np = partial.numpy()

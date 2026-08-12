@@ -126,12 +126,17 @@ class PointNetPPEncoder(nn.Module):
             nn.Linear(256, 512),
             nn.BatchNorm1d(512),
             nn.ReLU(inplace=True),
-            nn.Linear(512, 1024),
-            nn.BatchNorm1d(1024),
+            nn.Linear(512, 2048),
+            nn.BatchNorm1d(2048),
             nn.ReLU(inplace=True),
         )
 
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
+    def reparameterize(self, mu: torch.Tensor, log_sigma: torch.Tensor) -> torch.Tensor:
+        std = torch.exp(0.5 * log_sigma)
+        eps = torch.randn_like(std)
+        return mu + eps * std
+
+    def forward(self, x: torch.Tensor):
         if x.dim() != 3 or x.shape[-1] != 3:
             raise ValueError(f"Expected input shape [B, N, 3], got {tuple(x.shape)}")
 
@@ -142,4 +147,9 @@ class PointNetPPEncoder(nn.Module):
         pos, features, batch = self.sa1(pos, None, batch)
         pos, features, batch = self.sa2(pos, features, batch)
         features = global_max_pool(features, batch)
-        return self.sa3_mlp(features)
+        out = self.sa3_mlp(features)
+
+        mu = out[:, :1024]
+        log_sigma = out[:, 1024:]
+        z = self.reparameterize(mu, log_sigma)
+        return z, mu, log_sigma

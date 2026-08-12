@@ -20,22 +20,27 @@ def test_dataset_shapes_and_normalization():
         assert len(dataset) > 0, f"{category} dataset should not be empty"
         print(f"{category}: {len(dataset)} samples")
 
-        sample = dataset[0]
-        assert isinstance(sample, torch.Tensor)
-        assert sample.shape == (2048, 3)
-        assert sample.dtype == torch.float32
-        assert torch.isfinite(sample).all()
-        assert sample.min() >= -1.0 - 1e-6
-        assert sample.max() <= 1.0 + 1e-6
+        partial, complete = dataset[0]
+        assert isinstance(partial, torch.Tensor)
+        assert isinstance(complete, torch.Tensor)
+        assert partial.shape == (1024, 3)
+        assert complete.shape == (2048, 3)
+        assert partial.dtype == torch.float32
+        assert complete.dtype == torch.float32
+        assert torch.isfinite(partial).all()
+        assert torch.isfinite(complete).all()
+        assert partial.min() >= -1.0 - 1e-6
+        assert partial.max() <= 1.0 + 1e-6
 
 def test_dataloader():
     dataset = ModelNetDataset(root_dir="data/ModelNet40", category="chair")
     loader = DataLoader(dataset, batch_size=4, shuffle=True)
     
-    for batch in loader:
-        print(f"Batch shape: {batch.shape}")  # Should be [4, 2048, 3]
-        assert batch.shape == (4, 2048, 3)
-        break  # Just test first batch
+    for partial_batch, complete_batch in loader:
+        print(f"Batch shapes: partial {partial_batch.shape}, complete {complete_batch.shape}")
+        assert partial_batch.shape == (4, 1024, 3)
+        assert complete_batch.shape == (4, 2048, 3)
+        break
     
     print("✓ DataLoader works!")
 

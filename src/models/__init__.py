@@ -1,7 +1,7 @@
 from .encoder import PointNetEncoder, PointNetPPEncoder
 from .decoder import FoldingNetDecoder
 from .losses import chamfer_loss
-from .model import PointCloudCompletion
+from .model import PointCloudCompletion, PointCloudCompletionNet
 
 __all__ = [
     "PointNetEncoder",
@@ -9,4 +9,5 @@ __all__ = [
     "FoldingNetDecoder",
     "chamfer_loss",
     "PointCloudCompletion",
+    "PointCloudCompletionNet",
 ]

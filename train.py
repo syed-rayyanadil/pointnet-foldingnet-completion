@@ -108,8 +108,27 @@ def train(args):
             complete = complete.to(device)
 
             optimizer.zero_grad()
-            predicted = model(partial)
-            loss = chamfer_loss(predicted, complete)
+            outputs = model(partial)
+
+            # Handle both deterministic (tensor) and VAE (dict) outputs
+            if isinstance(outputs, dict):
+                predicted = outputs["predicted_cloud"]
+                mu = outputs["mu"]
+                log_sigma = outputs["log_sigma"]
+            else:
+                predicted = outputs
+                mu = None
+                log_sigma = None
+
+            recon_loss = chamfer_loss(predicted, complete)
+
+            if mu is not None and log_sigma is not None:
+                kl_loss = -0.5 * torch.sum(1 + log_sigma - mu.pow(2) - log_sigma.exp(), dim=-1).mean()
+                loss = recon_loss + 1e-3 * kl_loss
+            else:
+                kl_loss = None
+                loss = recon_loss
+
             loss.backward()
             optimizer.step()
 
@@ -117,11 +136,18 @@ def train(args):
             num_batches += 1
 
             if (batch_idx + 1) % 10 == 0 or (batch_idx + 1) == len(loader):
-                print(
-                    f"  Epoch [{epoch}/{args.epochs}] "
-                    f"Batch [{batch_idx + 1}/{len(loader)}] "
-                    f"Loss: {loss.item():.6f}"
-                )
+                if kl_loss is not None:
+                    print(
+                        f"  Epoch [{epoch}/{args.epochs}] "
+                        f"Batch [{batch_idx + 1}/{len(loader)}] "
+                        f"Loss: {loss.item():.6f} (Recon: {recon_loss.item():.6f}, KL: {kl_loss.item():.6f})"
+                    )
+                else:
+                    print(
+                        f"  Epoch [{epoch}/{args.epochs}] "
+                        f"Batch [{batch_idx + 1}/{len(loader)}] "
+                        f"Loss: {loss.item():.6f}"
+                    )
 
         avg_loss = epoch_loss / num_batches
         elapsed = time.time() - epoch_start
