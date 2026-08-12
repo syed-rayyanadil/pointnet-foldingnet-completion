@@ -12,10 +12,10 @@ class PointCloudCompletion(nn.Module):
     Takes a partial point cloud [B, N, 3] and predicts
     the complete point cloud [B, 2048, 3].
 
-    For deterministic encoders (pointnet, pointnet++):
+    For deterministic encoders (pointnet):
         forward() returns a plain tensor [B, 2048, 3]
 
-    For VAE encoders (pointnet++vae):
+    For VAE encoders (pointnet++):
         forward() returns a dict with keys:
             'predicted_cloud', 'mu', 'log_sigma'
     """
@@ -28,7 +28,7 @@ class PointCloudCompletion(nn.Module):
             self.is_vae = False
         elif encoder_type == "pointnet++":
             self.encoder = PointNetPPEncoder()
-            self.is_vae = False
+            self.is_vae = True
         else:
             raise ValueError(
                 f"Unknown encoder_type '{encoder_type}'. "
