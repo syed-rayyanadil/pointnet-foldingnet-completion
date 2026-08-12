@@ -34,13 +34,28 @@ def load_off(filename):
 
 class ModelNetDataset(Dataset):
     def __init__(self, root_dir, category, num_points=2048):
+        """
+        Args:
+            root_dir: path to the ModelNet40 root directory
+            category: a single category string (e.g. 'chair') or
+                      a list of category strings (e.g. ['chair', 'table', 'airplane'])
+            num_points: number of points to sample per object
+        """
         self.root_dir = Path(root_dir)
-        self.category = category
         self.num_points = num_points
-        self.file_paths = sorted((self.root_dir / category / "train").glob("*.off"))
+
+        categories = [category] if isinstance(category, str) else list(category)
+        self.category = categories
+
+        self.file_paths = []
+        for cat in categories:
+            cat_files = sorted((self.root_dir / cat / "train").glob("*.off"))
+            if not cat_files:
+                raise FileNotFoundError(f"No .off files found in {self.root_dir / cat / 'train'}")
+            self.file_paths.extend(cat_files)
 
         if not self.file_paths:
-            raise FileNotFoundError(f"No .off files found in {self.root_dir / category / 'train'}")
+            raise FileNotFoundError(f"No .off files found for categories: {categories}")
 
     def __len__(self):
         return len(self.file_paths)

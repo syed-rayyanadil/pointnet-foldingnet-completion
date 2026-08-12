@@ -1,6 +1,6 @@
 from .encoder import PointNetEncoder, PointNetPPEncoder
 from .decoder import FoldingNetDecoder
-from .losses import chamfer_loss
+from .losses import chamfer_loss, kl_divergence_loss
 from .model import PointCloudCompletion, PointCloudCompletionNet
 
 __all__ = [

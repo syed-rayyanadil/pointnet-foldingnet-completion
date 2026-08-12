@@ -13,7 +13,7 @@ import torch
 from torch.utils.data import DataLoader
 
 from data.dataset import ModelNetDataset
-from src.models import PointCloudCompletion, chamfer_loss
+from src.models import PointCloudCompletion, chamfer_loss, kl_divergence_loss
 
 
 def get_device(requested: str = "auto"):
@@ -26,10 +26,19 @@ def get_device(requested: str = "auto"):
     return torch.device("cpu")
 
 
+def get_beta(epoch: int, warmup_epochs: int = 50) -> float:
+    """Linearly scale beta from 0 to 1 over warmup_epochs epochs."""
+    return min(1.0, epoch / warmup_epochs)
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Train Point Cloud Completion model")
     parser.add_argument(
-        "--category", type=str, default="chair", help="ModelNet40 category (default: chair)"
+        "--categories",
+        type=str,
+        nargs="+",
+        default=["chair"],
+        help="One or more ModelNet40 categories (default: chair)",
     )
     parser.add_argument(
         "--epochs", type=int, default=5, help="Number of training epochs (default: 5)"
@@ -74,7 +83,7 @@ def train(args):
     print(f"Using device: {device}")
 
     dataset = ModelNetDataset(
-        root_dir="data/ModelNet40", category=args.category
+        root_dir="data/ModelNet40", category=args.categories
     )
     loader = DataLoader(
         dataset,
@@ -83,7 +92,8 @@ def train(args):
         drop_last=True,
         num_workers=0,
     )
-    print(f"Dataset: {args.category} - {len(dataset)} samples ({len(loader)} batches/epoch)")
+    categories_str = ", ".join(args.categories)
+    print(f"Dataset: [{categories_str}] - {len(dataset)} samples ({len(loader)} batches/epoch)")
 
     model = PointCloudCompletion(encoder_type=args.encoder).to(device)
     total_params = sum(p.numel() for p in model.parameters())
@@ -123,16 +133,18 @@ def train(args):
             recon_loss = chamfer_loss(predicted, complete)
 
             if mu is not None and log_sigma is not None:
-                kl_loss = -0.5 * torch.sum(1 + log_sigma - mu.pow(2) - log_sigma.exp(), dim=-1).mean()
-                loss = recon_loss + 1e-3 * kl_loss
+                beta = get_beta(epoch)
+                kl_loss = kl_divergence_loss(mu, log_sigma)
+                total_loss = recon_loss + beta * kl_loss
             else:
+                beta = None
                 kl_loss = None
-                loss = recon_loss
+                total_loss = recon_loss
 
-            loss.backward()
+            total_loss.backward()
             optimizer.step()
 
-            epoch_loss += loss.item()
+            epoch_loss += total_loss.item()
             num_batches += 1
 
             if (batch_idx + 1) % 10 == 0 or (batch_idx + 1) == len(loader):
@@ -140,13 +152,16 @@ def train(args):
                     print(
                         f"  Epoch [{epoch}/{args.epochs}] "
                         f"Batch [{batch_idx + 1}/{len(loader)}] "
-                        f"Loss: {loss.item():.6f} (Recon: {recon_loss.item():.6f}, KL: {kl_loss.item():.6f})"
+                        f"Total: {total_loss.item():.6f} | "
+                        f"Chamfer: {recon_loss.item():.6f} | "
+                        f"KL: {kl_loss.item():.6f} | "
+                        f"Beta: {beta:.4f}"
                     )
                 else:
                     print(
                         f"  Epoch [{epoch}/{args.epochs}] "
                         f"Batch [{batch_idx + 1}/{len(loader)}] "
-                        f"Loss: {loss.item():.6f}"
+                        f"Loss: {total_loss.item():.6f}"
                     )
 
         avg_loss = epoch_loss / num_batches
