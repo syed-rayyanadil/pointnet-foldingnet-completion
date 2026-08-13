@@ -75,6 +75,12 @@ def parse_args():
         default=5,
         help="Save checkpoint every N epochs (default: 5)",
     )
+    parser.add_argument(
+        "--num_workers",
+        type=int,
+        default=0,
+        help="Number of dataloader workers (default: 0)",
+    )
     return parser.parse_args()
 
 
@@ -90,7 +96,7 @@ def train(args):
         batch_size=args.batch_size,
         shuffle=True,
         drop_last=True,
-        num_workers=0,
+        num_workers=args.num_workers,
     )
     categories_str = ", ".join(args.categories)
     print(f"Dataset: [{categories_str}] - {len(dataset)} samples ({len(loader)} batches/epoch)")
