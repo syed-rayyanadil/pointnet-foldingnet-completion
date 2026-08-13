@@ -135,7 +135,7 @@ def train(args):
             if mu is not None and log_sigma is not None:
                 beta = get_beta(epoch)
                 kl_loss = kl_divergence_loss(mu, log_sigma)
-                total_loss = recon_loss + beta * kl_loss
+                total_loss = recon_loss + (beta * 1e-3) * kl_loss
             else:
                 beta = None
                 kl_loss = None
@@ -149,12 +149,14 @@ def train(args):
 
             if (batch_idx + 1) % 10 == 0 or (batch_idx + 1) == len(loader):
                 if kl_loss is not None:
+                    scaled_kl = (beta * 1e-3) * kl_loss.item()
                     print(
                         f"  Epoch [{epoch}/{args.epochs}] "
                         f"Batch [{batch_idx + 1}/{len(loader)}] "
                         f"Total: {total_loss.item():.6f} | "
                         f"Chamfer: {recon_loss.item():.6f} | "
-                        f"KL: {kl_loss.item():.6f} | "
+                        f"KL (Raw): {kl_loss.item():.6f} | "
+                        f"KL (Scaled): {scaled_kl:.6f} | "
                         f"Beta: {beta:.4f}"
                     )
                 else:
