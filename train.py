@@ -81,6 +81,12 @@ def parse_args():
         default=0,
         help="Number of dataloader workers (default: 0)",
     )
+    parser.add_argument(
+        "--resume",
+        type=str,
+        default="",
+        help="Path to checkpoint to resume training from (default: none)",
+    )
     return parser.parse_args()
 
 
@@ -102,6 +108,14 @@ def train(args):
     print(f"Dataset: [{categories_str}] - {len(dataset)} samples ({len(loader)} batches/epoch)")
 
     model = PointCloudCompletion(encoder_type=args.encoder).to(device)
+    
+    if args.resume:
+        if os.path.exists(args.resume):
+            model.load_state_dict(torch.load(args.resume, map_location=device))
+            print(f"Resumed training from checkpoint: {args.resume}")
+        else:
+            print(f"Warning: Checkpoint path '{args.resume}' not found. Training from scratch.")
+
     total_params = sum(p.numel() for p in model.parameters())
     print(f"Model: {args.encoder} encoder - {total_params:,} parameters")
 
