@@ -1,0 +1,966 @@
+Using device: cuda
+Dataset: [chair] - 889 samples (18 batches/epoch)
+Model: pointnet++ encoder - 2,058,051 parameters
+
+Starting training for 200 epochs...
+
+C:\Users\Sana\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch_geometric\utils\_scatter.py:91: UserWarning: The usage of `scatter(reduce='max')` can be accelerated via the 'torch-scatter' package, but it was not found
+  warnings.warn(
+  Epoch [1/200] Batch [10/18] Total: 0.683544 | Chamfer: 0.670420 | KL (Raw): 656.204956 | KL (Scaled): 0.013124 | Beta: 0.0200
+  Epoch [1/200] Batch [18/18] Total: 0.735127 | Chamfer: 0.721895 | KL (Raw): 661.591370 | KL (Scaled): 0.013232 | Beta: 0.0200
+Epoch 1/200 complete | Avg Loss: 0.722150 | Time: 150.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [2/200] Batch [10/18] Total: 0.749459 | Chamfer: 0.724329 | KL (Raw): 628.241943 | KL (Scaled): 0.025130 | Beta: 0.0400
+  Epoch [2/200] Batch [18/18] Total: 0.726150 | Chamfer: 0.702170 | KL (Raw): 599.495117 | KL (Scaled): 0.023980 | Beta: 0.0400
+Epoch 2/200 complete | Avg Loss: 0.713992 | Time: 146.4s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [3/200] Batch [10/18] Total: 0.739994 | Chamfer: 0.705444 | KL (Raw): 575.837280 | KL (Scaled): 0.034550 | Beta: 0.0600
+  Epoch [3/200] Batch [18/18] Total: 0.713897 | Chamfer: 0.681234 | KL (Raw): 544.395996 | KL (Scaled): 0.032664 | Beta: 0.0600
+Epoch 3/200 complete | Avg Loss: 0.706921 | Time: 162.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [4/200] Batch [10/18] Total: 0.704533 | Chamfer: 0.664152 | KL (Raw): 504.766693 | KL (Scaled): 0.040381 | Beta: 0.0800
+  Epoch [4/200] Batch [18/18] Total: 0.743654 | Chamfer: 0.702885 | KL (Raw): 509.611267 | KL (Scaled): 0.040769 | Beta: 0.0800
+Epoch 4/200 complete | Avg Loss: 0.714388 | Time: 149.9s
+
+  Epoch [5/200] Batch [10/18] Total: 0.715539 | Chamfer: 0.665518 | KL (Raw): 500.203979 | KL (Scaled): 0.050020 | Beta: 0.1000
+  Epoch [5/200] Batch [18/18] Total: 0.721705 | Chamfer: 0.672260 | KL (Raw): 494.452881 | KL (Scaled): 0.049445 | Beta: 0.1000
+Epoch 5/200 complete | Avg Loss: 0.711416 | Time: 169.2s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_5.pth
+
+  Epoch [6/200] Batch [10/18] Total: 0.739345 | Chamfer: 0.681472 | KL (Raw): 482.270355 | KL (Scaled): 0.057872 | Beta: 0.1200
+  Epoch [6/200] Batch [18/18] Total: 0.697182 | Chamfer: 0.640012 | KL (Raw): 476.416443 | KL (Scaled): 0.057170 | Beta: 0.1200
+Epoch 6/200 complete | Avg Loss: 0.712409 | Time: 159.2s
+
+  Epoch [7/200] Batch [10/18] Total: 0.762894 | Chamfer: 0.696922 | KL (Raw): 471.229004 | KL (Scaled): 0.065972 | Beta: 0.1400
+  Epoch [7/200] Batch [18/18] Total: 0.717270 | Chamfer: 0.652067 | KL (Raw): 465.736023 | KL (Scaled): 0.065203 | Beta: 0.1400
+Epoch 7/200 complete | Avg Loss: 0.719250 | Time: 166.3s
+
+  Epoch [8/200] Batch [10/18] Total: 0.723719 | Chamfer: 0.650796 | KL (Raw): 455.771729 | KL (Scaled): 0.072923 | Beta: 0.1600
+  Epoch [8/200] Batch [18/18] Total: 0.716401 | Chamfer: 0.643492 | KL (Raw): 455.681732 | KL (Scaled): 0.072909 | Beta: 0.1600
+Epoch 8/200 complete | Avg Loss: 0.717476 | Time: 169.0s
+
+  Epoch [9/200] Batch [10/18] Total: 0.728164 | Chamfer: 0.647828 | KL (Raw): 446.307556 | KL (Scaled): 0.080335 | Beta: 0.1800
+  Epoch [9/200] Batch [18/18] Total: 0.725208 | Chamfer: 0.645989 | KL (Raw): 440.104187 | KL (Scaled): 0.079219 | Beta: 0.1800
+Epoch 9/200 complete | Avg Loss: 0.715770 | Time: 157.5s
+
+  Epoch [10/200] Batch [10/18] Total: 0.709012 | Chamfer: 0.622045 | KL (Raw): 434.834320 | KL (Scaled): 0.086967 | Beta: 0.2000
+  Epoch [10/200] Batch [18/18] Total: 0.738999 | Chamfer: 0.653713 | KL (Raw): 426.431885 | KL (Scaled): 0.085286 | Beta: 0.2000
+Epoch 10/200 complete | Avg Loss: 0.713690 | Time: 153.2s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_10.pth
+
+  Epoch [11/200] Batch [10/18] Total: 0.713348 | Chamfer: 0.622174 | KL (Raw): 414.424896 | KL (Scaled): 0.091173 | Beta: 0.2200
+  Epoch [11/200] Batch [18/18] Total: 0.706292 | Chamfer: 0.614985 | KL (Raw): 415.032562 | KL (Scaled): 0.091307 | Beta: 0.2200
+Epoch 11/200 complete | Avg Loss: 0.714830 | Time: 154.0s
+
+  Epoch [12/200] Batch [10/18] Total: 0.708914 | Chamfer: 0.613276 | KL (Raw): 398.491058 | KL (Scaled): 0.095638 | Beta: 0.2400
+  Epoch [12/200] Batch [18/18] Total: 0.674081 | Chamfer: 0.576044 | KL (Raw): 408.488495 | KL (Scaled): 0.098037 | Beta: 0.2400
+Epoch 12/200 complete | Avg Loss: 0.704461 | Time: 153.9s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [13/200] Batch [10/18] Total: 0.705527 | Chamfer: 0.603041 | KL (Raw): 394.178070 | KL (Scaled): 0.102486 | Beta: 0.2600
+  Epoch [13/200] Batch [18/18] Total: 0.666823 | Chamfer: 0.564946 | KL (Raw): 391.833740 | KL (Scaled): 0.101877 | Beta: 0.2600
+Epoch 13/200 complete | Avg Loss: 0.701941 | Time: 152.9s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [14/200] Batch [10/18] Total: 0.675050 | Chamfer: 0.570897 | KL (Raw): 371.975647 | KL (Scaled): 0.104153 | Beta: 0.2800
+  Epoch [14/200] Batch [18/18] Total: 0.690259 | Chamfer: 0.588033 | KL (Raw): 365.090210 | KL (Scaled): 0.102225 | Beta: 0.2800
+Epoch 14/200 complete | Avg Loss: 0.687735 | Time: 154.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [15/200] Batch [10/18] Total: 0.665282 | Chamfer: 0.555923 | KL (Raw): 364.528870 | KL (Scaled): 0.109359 | Beta: 0.3000
+  Epoch [15/200] Batch [18/18] Total: 0.702594 | Chamfer: 0.600092 | KL (Raw): 341.673523 | KL (Scaled): 0.102502 | Beta: 0.3000
+Epoch 15/200 complete | Avg Loss: 0.675490 | Time: 155.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_15.pth
+
+  Epoch [16/200] Batch [10/18] Total: 0.626775 | Chamfer: 0.516891 | KL (Raw): 343.388550 | KL (Scaled): 0.109884 | Beta: 0.3200
+  Epoch [16/200] Batch [18/18] Total: 0.636744 | Chamfer: 0.531949 | KL (Raw): 327.487335 | KL (Scaled): 0.104796 | Beta: 0.3200
+Epoch 16/200 complete | Avg Loss: 0.653260 | Time: 153.9s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [17/200] Batch [10/18] Total: 0.655645 | Chamfer: 0.545309 | KL (Raw): 324.515961 | KL (Scaled): 0.110335 | Beta: 0.3400
+  Epoch [17/200] Batch [18/18] Total: 0.632620 | Chamfer: 0.525632 | KL (Raw): 314.670410 | KL (Scaled): 0.106988 | Beta: 0.3400
+Epoch 17/200 complete | Avg Loss: 0.637681 | Time: 154.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [18/200] Batch [10/18] Total: 0.601031 | Chamfer: 0.488703 | KL (Raw): 312.021729 | KL (Scaled): 0.112328 | Beta: 0.3600
+  Epoch [18/200] Batch [18/18] Total: 0.611308 | Chamfer: 0.505070 | KL (Raw): 295.104675 | KL (Scaled): 0.106238 | Beta: 0.3600
+Epoch 18/200 complete | Avg Loss: 0.615544 | Time: 157.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [19/200] Batch [10/18] Total: 0.597540 | Chamfer: 0.489789 | KL (Raw): 283.555237 | KL (Scaled): 0.107751 | Beta: 0.3800
+  Epoch [19/200] Batch [18/18] Total: 0.570707 | Chamfer: 0.461365 | KL (Raw): 287.741333 | KL (Scaled): 0.109342 | Beta: 0.3800
+Epoch 19/200 complete | Avg Loss: 0.593226 | Time: 165.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [20/200] Batch [10/18] Total: 0.587589 | Chamfer: 0.478276 | KL (Raw): 273.282654 | KL (Scaled): 0.109313 | Beta: 0.4000
+  Epoch [20/200] Batch [18/18] Total: 0.562616 | Chamfer: 0.457748 | KL (Raw): 262.171082 | KL (Scaled): 0.104868 | Beta: 0.4000
+Epoch 20/200 complete | Avg Loss: 0.571499 | Time: 153.9s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_20.pth
+
+  Epoch [21/200] Batch [10/18] Total: 0.587104 | Chamfer: 0.481310 | KL (Raw): 251.889694 | KL (Scaled): 0.105794 | Beta: 0.4200
+  Epoch [21/200] Batch [18/18] Total: 0.538216 | Chamfer: 0.434947 | KL (Raw): 245.879562 | KL (Scaled): 0.103269 | Beta: 0.4200
+Epoch 21/200 complete | Avg Loss: 0.548820 | Time: 153.8s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [22/200] Batch [10/18] Total: 0.521861 | Chamfer: 0.416772 | KL (Raw): 238.839279 | KL (Scaled): 0.105089 | Beta: 0.4400
+  Epoch [22/200] Batch [18/18] Total: 0.534257 | Chamfer: 0.431286 | KL (Raw): 234.024048 | KL (Scaled): 0.102971 | Beta: 0.4400
+Epoch 22/200 complete | Avg Loss: 0.528294 | Time: 154.4s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [23/200] Batch [10/18] Total: 0.496935 | Chamfer: 0.397315 | KL (Raw): 216.565063 | KL (Scaled): 0.099620 | Beta: 0.4600
+  Epoch [23/200] Batch [18/18] Total: 0.505108 | Chamfer: 0.409073 | KL (Raw): 208.771820 | KL (Scaled): 0.096035 | Beta: 0.4600
+Epoch 23/200 complete | Avg Loss: 0.513040 | Time: 154.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [24/200] Batch [10/18] Total: 0.503174 | Chamfer: 0.407712 | KL (Raw): 198.879517 | KL (Scaled): 0.095462 | Beta: 0.4800
+  Epoch [24/200] Batch [18/18] Total: 0.490295 | Chamfer: 0.396030 | KL (Raw): 196.385223 | KL (Scaled): 0.094265 | Beta: 0.4800
+Epoch 24/200 complete | Avg Loss: 0.498010 | Time: 153.6s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [25/200] Batch [10/18] Total: 0.490457 | Chamfer: 0.404066 | KL (Raw): 172.782593 | KL (Scaled): 0.086391 | Beta: 0.5000
+  Epoch [25/200] Batch [18/18] Total: 0.488401 | Chamfer: 0.399869 | KL (Raw): 177.064117 | KL (Scaled): 0.088532 | Beta: 0.5000
+Epoch 25/200 complete | Avg Loss: 0.491467 | Time: 166.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_25.pth
+
+  Epoch [26/200] Batch [10/18] Total: 0.475707 | Chamfer: 0.398892 | KL (Raw): 147.720245 | KL (Scaled): 0.076815 | Beta: 0.5200
+  Epoch [26/200] Batch [18/18] Total: 0.464670 | Chamfer: 0.377509 | KL (Raw): 167.618500 | KL (Scaled): 0.087162 | Beta: 0.5200
+Epoch 26/200 complete | Avg Loss: 0.479999 | Time: 152.8s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [27/200] Batch [10/18] Total: 0.506438 | Chamfer: 0.425064 | KL (Raw): 150.692108 | KL (Scaled): 0.081374 | Beta: 0.5400
+  Epoch [27/200] Batch [18/18] Total: 0.430985 | Chamfer: 0.363377 | KL (Raw): 125.200943 | KL (Scaled): 0.067609 | Beta: 0.5400
+Epoch 27/200 complete | Avg Loss: 0.470943 | Time: 150.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [28/200] Batch [10/18] Total: 0.469569 | Chamfer: 0.382652 | KL (Raw): 155.210419 | KL (Scaled): 0.086918 | Beta: 0.5600
+  Epoch [28/200] Batch [18/18] Total: 0.434704 | Chamfer: 0.372924 | KL (Raw): 110.322144 | KL (Scaled): 0.061780 | Beta: 0.5600
+Epoch 28/200 complete | Avg Loss: 0.462369 | Time: 154.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [29/200] Batch [10/18] Total: 0.469189 | Chamfer: 0.403877 | KL (Raw): 112.606079 | KL (Scaled): 0.065312 | Beta: 0.5800
+  Epoch [29/200] Batch [18/18] Total: 0.442121 | Chamfer: 0.384155 | KL (Raw): 99.940697 | KL (Scaled): 0.057966 | Beta: 0.5800
+Epoch 29/200 complete | Avg Loss: 0.456017 | Time: 152.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [30/200] Batch [10/18] Total: 0.439365 | Chamfer: 0.379832 | KL (Raw): 99.221237 | KL (Scaled): 0.059533 | Beta: 0.6000
+  Epoch [30/200] Batch [18/18] Total: 0.459795 | Chamfer: 0.396226 | KL (Raw): 105.948425 | KL (Scaled): 0.063569 | Beta: 0.6000
+Epoch 30/200 complete | Avg Loss: 0.448864 | Time: 153.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_30.pth
+
+  Epoch [31/200] Batch [10/18] Total: 0.430900 | Chamfer: 0.379248 | KL (Raw): 83.309990 | KL (Scaled): 0.051652 | Beta: 0.6200
+  Epoch [31/200] Batch [18/18] Total: 0.433419 | Chamfer: 0.370694 | KL (Raw): 101.169113 | KL (Scaled): 0.062725 | Beta: 0.6200
+Epoch 31/200 complete | Avg Loss: 0.442202 | Time: 153.4s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [32/200] Batch [10/18] Total: 0.428561 | Chamfer: 0.376665 | KL (Raw): 81.088005 | KL (Scaled): 0.051896 | Beta: 0.6400
+  Epoch [32/200] Batch [18/18] Total: 0.425572 | Chamfer: 0.380429 | KL (Raw): 70.537292 | KL (Scaled): 0.045144 | Beta: 0.6400
+Epoch 32/200 complete | Avg Loss: 0.439373 | Time: 146.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [33/200] Batch [10/18] Total: 0.437792 | Chamfer: 0.394674 | KL (Raw): 65.330566 | KL (Scaled): 0.043118 | Beta: 0.6600
+  Epoch [33/200] Batch [18/18] Total: 0.459723 | Chamfer: 0.419602 | KL (Raw): 60.789135 | KL (Scaled): 0.040121 | Beta: 0.6600
+Epoch 33/200 complete | Avg Loss: 0.433070 | Time: 154.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [34/200] Batch [10/18] Total: 0.438370 | Chamfer: 0.394612 | KL (Raw): 64.350090 | KL (Scaled): 0.043758 | Beta: 0.6800
+  Epoch [34/200] Batch [18/18] Total: 0.434362 | Chamfer: 0.395609 | KL (Raw): 56.989532 | KL (Scaled): 0.038753 | Beta: 0.6800
+Epoch 34/200 complete | Avg Loss: 0.428685 | Time: 149.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [35/200] Batch [10/18] Total: 0.431874 | Chamfer: 0.388617 | KL (Raw): 61.795189 | KL (Scaled): 0.043257 | Beta: 0.7000
+  Epoch [35/200] Batch [18/18] Total: 0.398806 | Chamfer: 0.355714 | KL (Raw): 61.559288 | KL (Scaled): 0.043092 | Beta: 0.7000
+Epoch 35/200 complete | Avg Loss: 0.425031 | Time: 149.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_35.pth
+
+  Epoch [36/200] Batch [10/18] Total: 0.408193 | Chamfer: 0.373340 | KL (Raw): 48.407188 | KL (Scaled): 0.034853 | Beta: 0.7200
+  Epoch [36/200] Batch [18/18] Total: 0.427578 | Chamfer: 0.395019 | KL (Raw): 45.221664 | KL (Scaled): 0.032560 | Beta: 0.7200
+Epoch 36/200 complete | Avg Loss: 0.422326 | Time: 155.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [37/200] Batch [10/18] Total: 0.404959 | Chamfer: 0.368562 | KL (Raw): 49.184383 | KL (Scaled): 0.036396 | Beta: 0.7400
+  Epoch [37/200] Batch [18/18] Total: 0.432102 | Chamfer: 0.399089 | KL (Raw): 44.612854 | KL (Scaled): 0.033014 | Beta: 0.7400
+Epoch 37/200 complete | Avg Loss: 0.416855 | Time: 148.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [38/200] Batch [10/18] Total: 0.408418 | Chamfer: 0.377219 | KL (Raw): 41.051464 | KL (Scaled): 0.031199 | Beta: 0.7600
+  Epoch [38/200] Batch [18/18] Total: 0.414973 | Chamfer: 0.385733 | KL (Raw): 38.473770 | KL (Scaled): 0.029240 | Beta: 0.7600
+Epoch 38/200 complete | Avg Loss: 0.415104 | Time: 153.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [39/200] Batch [10/18] Total: 0.399284 | Chamfer: 0.368550 | KL (Raw): 39.402157 | KL (Scaled): 0.030734 | Beta: 0.7800
+  Epoch [39/200] Batch [18/18] Total: 0.418872 | Chamfer: 0.384094 | KL (Raw): 44.587570 | KL (Scaled): 0.034778 | Beta: 0.7800
+Epoch 39/200 complete | Avg Loss: 0.413273 | Time: 150.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [40/200] Batch [10/18] Total: 0.412852 | Chamfer: 0.382645 | KL (Raw): 37.758984 | KL (Scaled): 0.030207 | Beta: 0.8000
+  Epoch [40/200] Batch [18/18] Total: 0.418541 | Chamfer: 0.391257 | KL (Raw): 34.104977 | KL (Scaled): 0.027284 | Beta: 0.8000
+Epoch 40/200 complete | Avg Loss: 0.412538 | Time: 152.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_40.pth
+
+  Epoch [41/200] Batch [10/18] Total: 0.399303 | Chamfer: 0.372409 | KL (Raw): 32.797325 | KL (Scaled): 0.026894 | Beta: 0.8200
+  Epoch [41/200] Batch [18/18] Total: 0.405177 | Chamfer: 0.380888 | KL (Raw): 29.620985 | KL (Scaled): 0.024289 | Beta: 0.8200
+Epoch 41/200 complete | Avg Loss: 0.410137 | Time: 151.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [42/200] Batch [10/18] Total: 0.412332 | Chamfer: 0.380985 | KL (Raw): 37.318058 | KL (Scaled): 0.031347 | Beta: 0.8400
+  Epoch [42/200] Batch [18/18] Total: 0.407495 | Chamfer: 0.376260 | KL (Raw): 37.184666 | KL (Scaled): 0.031235 | Beta: 0.8400
+Epoch 42/200 complete | Avg Loss: 0.409510 | Time: 148.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [43/200] Batch [10/18] Total: 0.393412 | Chamfer: 0.366680 | KL (Raw): 31.083807 | KL (Scaled): 0.026732 | Beta: 0.8600
+  Epoch [43/200] Batch [18/18] Total: 0.400366 | Chamfer: 0.374529 | KL (Raw): 30.043682 | KL (Scaled): 0.025838 | Beta: 0.8600
+Epoch 43/200 complete | Avg Loss: 0.407984 | Time: 150.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [44/200] Batch [10/18] Total: 0.398722 | Chamfer: 0.377265 | KL (Raw): 24.382812 | KL (Scaled): 0.021457 | Beta: 0.8800
+  Epoch [44/200] Batch [18/18] Total: 0.403674 | Chamfer: 0.378303 | KL (Raw): 28.830559 | KL (Scaled): 0.025371 | Beta: 0.8800
+Epoch 44/200 complete | Avg Loss: 0.405104 | Time: 149.9s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [45/200] Batch [10/18] Total: 0.390273 | Chamfer: 0.366762 | KL (Raw): 26.123198 | KL (Scaled): 0.023511 | Beta: 0.9000
+  Epoch [45/200] Batch [18/18] Total: 0.407569 | Chamfer: 0.383022 | KL (Raw): 27.273733 | KL (Scaled): 0.024546 | Beta: 0.9000
+Epoch 45/200 complete | Avg Loss: 0.404099 | Time: 146.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_45.pth
+
+  Epoch [46/200] Batch [10/18] Total: 0.402705 | Chamfer: 0.372133 | KL (Raw): 33.230408 | KL (Scaled): 0.030572 | Beta: 0.9200
+  Epoch [46/200] Batch [18/18] Total: 0.404391 | Chamfer: 0.379813 | KL (Raw): 26.715271 | KL (Scaled): 0.024578 | Beta: 0.9200
+Epoch 46/200 complete | Avg Loss: 0.405856 | Time: 145.8s
+
+  Epoch [47/200] Batch [10/18] Total: 0.402329 | Chamfer: 0.379922 | KL (Raw): 23.836567 | KL (Scaled): 0.022406 | Beta: 0.9400
+  Epoch [47/200] Batch [18/18] Total: 0.384290 | Chamfer: 0.358783 | KL (Raw): 27.135244 | KL (Scaled): 0.025507 | Beta: 0.9400
+Epoch 47/200 complete | Avg Loss: 0.403859 | Time: 151.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [48/200] Batch [10/18] Total: 0.417555 | Chamfer: 0.394670 | KL (Raw): 23.838820 | KL (Scaled): 0.022885 | Beta: 0.9600
+  Epoch [48/200] Batch [18/18] Total: 0.394528 | Chamfer: 0.371322 | KL (Raw): 24.173168 | KL (Scaled): 0.023206 | Beta: 0.9600
+Epoch 48/200 complete | Avg Loss: 0.404004 | Time: 149.9s
+
+  Epoch [49/200] Batch [10/18] Total: 0.421683 | Chamfer: 0.401223 | KL (Raw): 20.877733 | KL (Scaled): 0.020460 | Beta: 0.9800
+  Epoch [49/200] Batch [18/18] Total: 0.398370 | Chamfer: 0.376006 | KL (Raw): 22.821035 | KL (Scaled): 0.022365 | Beta: 0.9800
+Epoch 49/200 complete | Avg Loss: 0.402405 | Time: 151.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [50/200] Batch [10/18] Total: 0.403009 | Chamfer: 0.382030 | KL (Raw): 20.979282 | KL (Scaled): 0.020979 | Beta: 1.0000
+  Epoch [50/200] Batch [18/18] Total: 0.391572 | Chamfer: 0.369793 | KL (Raw): 21.778805 | KL (Scaled): 0.021779 | Beta: 1.0000
+Epoch 50/200 complete | Avg Loss: 0.399087 | Time: 152.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_50.pth
+
+  Epoch [51/200] Batch [10/18] Total: 0.404247 | Chamfer: 0.383489 | KL (Raw): 20.758442 | KL (Scaled): 0.020758 | Beta: 1.0000
+  Epoch [51/200] Batch [18/18] Total: 0.412427 | Chamfer: 0.390912 | KL (Raw): 21.515926 | KL (Scaled): 0.021516 | Beta: 1.0000
+Epoch 51/200 complete | Avg Loss: 0.398343 | Time: 191.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [52/200] Batch [10/18] Total: 0.393918 | Chamfer: 0.371773 | KL (Raw): 22.144623 | KL (Scaled): 0.022145 | Beta: 1.0000
+  Epoch [52/200] Batch [18/18] Total: 0.438029 | Chamfer: 0.415507 | KL (Raw): 22.521492 | KL (Scaled): 0.022521 | Beta: 1.0000
+Epoch 52/200 complete | Avg Loss: 0.399873 | Time: 150.7s
+
+  Epoch [53/200] Batch [10/18] Total: 0.403393 | Chamfer: 0.387149 | KL (Raw): 16.243917 | KL (Scaled): 0.016244 | Beta: 1.0000
+  Epoch [53/200] Batch [18/18] Total: 0.408368 | Chamfer: 0.390707 | KL (Raw): 17.660309 | KL (Scaled): 0.017660 | Beta: 1.0000
+Epoch 53/200 complete | Avg Loss: 0.397958 | Time: 153.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [54/200] Batch [10/18] Total: 0.406758 | Chamfer: 0.388631 | KL (Raw): 18.126953 | KL (Scaled): 0.018127 | Beta: 1.0000
+  Epoch [54/200] Batch [18/18] Total: 0.397400 | Chamfer: 0.378309 | KL (Raw): 19.091505 | KL (Scaled): 0.019092 | Beta: 1.0000
+Epoch 54/200 complete | Avg Loss: 0.399423 | Time: 148.8s
+
+  Epoch [55/200] Batch [10/18] Total: 0.392756 | Chamfer: 0.370399 | KL (Raw): 22.357168 | KL (Scaled): 0.022357 | Beta: 1.0000
+  Epoch [55/200] Batch [18/18] Total: 0.406981 | Chamfer: 0.389782 | KL (Raw): 17.198988 | KL (Scaled): 0.017199 | Beta: 1.0000
+Epoch 55/200 complete | Avg Loss: 0.395501 | Time: 151.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_55.pth
+
+  Epoch [56/200] Batch [10/18] Total: 0.394423 | Chamfer: 0.375502 | KL (Raw): 18.920483 | KL (Scaled): 0.018920 | Beta: 1.0000
+  Epoch [56/200] Batch [18/18] Total: 0.393326 | Chamfer: 0.377102 | KL (Raw): 16.224012 | KL (Scaled): 0.016224 | Beta: 1.0000
+Epoch 56/200 complete | Avg Loss: 0.395197 | Time: 213.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [57/200] Batch [10/18] Total: 0.398039 | Chamfer: 0.381442 | KL (Raw): 16.596886 | KL (Scaled): 0.016597 | Beta: 1.0000
+  Epoch [57/200] Batch [18/18] Total: 0.403255 | Chamfer: 0.386437 | KL (Raw): 16.818792 | KL (Scaled): 0.016819 | Beta: 1.0000
+Epoch 57/200 complete | Avg Loss: 0.395901 | Time: 256.5s
+
+  Epoch [58/200] Batch [10/18] Total: 0.396686 | Chamfer: 0.381670 | KL (Raw): 15.016208 | KL (Scaled): 0.015016 | Beta: 1.0000
+  Epoch [58/200] Batch [18/18] Total: 0.404808 | Chamfer: 0.389129 | KL (Raw): 15.678846 | KL (Scaled): 0.015679 | Beta: 1.0000
+Epoch 58/200 complete | Avg Loss: 0.393082 | Time: 217.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [59/200] Batch [10/18] Total: 0.408056 | Chamfer: 0.393433 | KL (Raw): 14.622440 | KL (Scaled): 0.014622 | Beta: 1.0000
+  Epoch [59/200] Batch [18/18] Total: 0.387319 | Chamfer: 0.371538 | KL (Raw): 15.781127 | KL (Scaled): 0.015781 | Beta: 1.0000
+Epoch 59/200 complete | Avg Loss: 0.393221 | Time: 154.0s
+
+  Epoch [60/200] Batch [10/18] Total: 0.367685 | Chamfer: 0.353250 | KL (Raw): 14.434787 | KL (Scaled): 0.014435 | Beta: 1.0000
+  Epoch [60/200] Batch [18/18] Total: 0.376141 | Chamfer: 0.359901 | KL (Raw): 16.240063 | KL (Scaled): 0.016240 | Beta: 1.0000
+Epoch 60/200 complete | Avg Loss: 0.391487 | Time: 153.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_60.pth
+
+  Epoch [61/200] Batch [10/18] Total: 0.373200 | Chamfer: 0.360098 | KL (Raw): 13.101578 | KL (Scaled): 0.013102 | Beta: 1.0000
+  Epoch [61/200] Batch [18/18] Total: 0.398679 | Chamfer: 0.385608 | KL (Raw): 13.070697 | KL (Scaled): 0.013071 | Beta: 1.0000
+Epoch 61/200 complete | Avg Loss: 0.391180 | Time: 153.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [62/200] Batch [10/18] Total: 0.394296 | Chamfer: 0.380540 | KL (Raw): 13.755713 | KL (Scaled): 0.013756 | Beta: 1.0000
+  Epoch [62/200] Batch [18/18] Total: 0.378431 | Chamfer: 0.363816 | KL (Raw): 14.615417 | KL (Scaled): 0.014615 | Beta: 1.0000
+Epoch 62/200 complete | Avg Loss: 0.390133 | Time: 151.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [63/200] Batch [10/18] Total: 0.385769 | Chamfer: 0.369502 | KL (Raw): 16.267223 | KL (Scaled): 0.016267 | Beta: 1.0000
+  Epoch [63/200] Batch [18/18] Total: 0.378482 | Chamfer: 0.365398 | KL (Raw): 13.083647 | KL (Scaled): 0.013084 | Beta: 1.0000
+Epoch 63/200 complete | Avg Loss: 0.391122 | Time: 145.6s
+
+  Epoch [64/200] Batch [10/18] Total: 0.390105 | Chamfer: 0.376315 | KL (Raw): 13.790011 | KL (Scaled): 0.013790 | Beta: 1.0000
+  Epoch [64/200] Batch [18/18] Total: 0.398098 | Chamfer: 0.383878 | KL (Raw): 14.220194 | KL (Scaled): 0.014220 | Beta: 1.0000
+Epoch 64/200 complete | Avg Loss: 0.389283 | Time: 147.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [65/200] Batch [10/18] Total: 0.390227 | Chamfer: 0.376849 | KL (Raw): 13.378176 | KL (Scaled): 0.013378 | Beta: 1.0000
+  Epoch [65/200] Batch [18/18] Total: 0.408366 | Chamfer: 0.395497 | KL (Raw): 12.868735 | KL (Scaled): 0.012869 | Beta: 1.0000
+Epoch 65/200 complete | Avg Loss: 0.389496 | Time: 152.6s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_65.pth
+
+  Epoch [66/200] Batch [10/18] Total: 0.380610 | Chamfer: 0.368384 | KL (Raw): 12.225645 | KL (Scaled): 0.012226 | Beta: 1.0000
+  Epoch [66/200] Batch [18/18] Total: 0.379627 | Chamfer: 0.365950 | KL (Raw): 13.676794 | KL (Scaled): 0.013677 | Beta: 1.0000
+Epoch 66/200 complete | Avg Loss: 0.388191 | Time: 151.4s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [67/200] Batch [10/18] Total: 0.384033 | Chamfer: 0.372432 | KL (Raw): 11.601700 | KL (Scaled): 0.011602 | Beta: 1.0000
+  Epoch [67/200] Batch [18/18] Total: 0.373850 | Chamfer: 0.362009 | KL (Raw): 11.840534 | KL (Scaled): 0.011841 | Beta: 1.0000
+Epoch 67/200 complete | Avg Loss: 0.386615 | Time: 149.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [68/200] Batch [10/18] Total: 0.382083 | Chamfer: 0.370477 | KL (Raw): 11.606266 | KL (Scaled): 0.011606 | Beta: 1.0000
+  Epoch [68/200] Batch [18/18] Total: 0.372947 | Chamfer: 0.360945 | KL (Raw): 12.001548 | KL (Scaled): 0.012002 | Beta: 1.0000
+Epoch 68/200 complete | Avg Loss: 0.385672 | Time: 150.8s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [69/200] Batch [10/18] Total: 0.388134 | Chamfer: 0.376840 | KL (Raw): 11.294185 | KL (Scaled): 0.011294 | Beta: 1.0000
+  Epoch [69/200] Batch [18/18] Total: 0.385730 | Chamfer: 0.374239 | KL (Raw): 11.491407 | KL (Scaled): 0.011491 | Beta: 1.0000
+Epoch 69/200 complete | Avg Loss: 0.384478 | Time: 145.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [70/200] Batch [10/18] Total: 0.393719 | Chamfer: 0.381958 | KL (Raw): 11.761007 | KL (Scaled): 0.011761 | Beta: 1.0000
+  Epoch [70/200] Batch [18/18] Total: 0.391503 | Chamfer: 0.379538 | KL (Raw): 11.965008 | KL (Scaled): 0.011965 | Beta: 1.0000
+Epoch 70/200 complete | Avg Loss: 0.385853 | Time: 149.0s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_70.pth
+
+  Epoch [71/200] Batch [10/18] Total: 0.389316 | Chamfer: 0.379018 | KL (Raw): 10.297974 | KL (Scaled): 0.010298 | Beta: 1.0000
+  Epoch [71/200] Batch [18/18] Total: 0.387026 | Chamfer: 0.373338 | KL (Raw): 13.688185 | KL (Scaled): 0.013688 | Beta: 1.0000
+Epoch 71/200 complete | Avg Loss: 0.385057 | Time: 150.1s
+
+  Epoch [72/200] Batch [10/18] Total: 0.372068 | Chamfer: 0.360279 | KL (Raw): 11.788481 | KL (Scaled): 0.011788 | Beta: 1.0000
+  Epoch [72/200] Batch [18/18] Total: 0.383449 | Chamfer: 0.370059 | KL (Raw): 13.389874 | KL (Scaled): 0.013390 | Beta: 1.0000
+Epoch 72/200 complete | Avg Loss: 0.383543 | Time: 147.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [73/200] Batch [10/18] Total: 0.370693 | Chamfer: 0.360265 | KL (Raw): 10.428164 | KL (Scaled): 0.010428 | Beta: 1.0000
+  Epoch [73/200] Batch [18/18] Total: 0.382009 | Chamfer: 0.371536 | KL (Raw): 10.472949 | KL (Scaled): 0.010473 | Beta: 1.0000
+Epoch 73/200 complete | Avg Loss: 0.384522 | Time: 153.1s
+
+  Epoch [74/200] Batch [10/18] Total: 0.363557 | Chamfer: 0.353349 | KL (Raw): 10.208283 | KL (Scaled): 0.010208 | Beta: 1.0000
+  Epoch [74/200] Batch [18/18] Total: 0.378002 | Chamfer: 0.367820 | KL (Raw): 10.181652 | KL (Scaled): 0.010182 | Beta: 1.0000
+Epoch 74/200 complete | Avg Loss: 0.384085 | Time: 154.2s
+
+  Epoch [75/200] Batch [10/18] Total: 0.378879 | Chamfer: 0.368968 | KL (Raw): 9.910505 | KL (Scaled): 0.009911 | Beta: 1.0000
+  Epoch [75/200] Batch [18/18] Total: 0.393896 | Chamfer: 0.382618 | KL (Raw): 11.277845 | KL (Scaled): 0.011278 | Beta: 1.0000
+Epoch 75/200 complete | Avg Loss: 0.383536 | Time: 152.6s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_75.pth
+
+  Epoch [76/200] Batch [10/18] Total: 0.389766 | Chamfer: 0.378798 | KL (Raw): 10.967972 | KL (Scaled): 0.010968 | Beta: 1.0000
+  Epoch [76/200] Batch [18/18] Total: 0.401180 | Chamfer: 0.392217 | KL (Raw): 8.962708 | KL (Scaled): 0.008963 | Beta: 1.0000
+Epoch 76/200 complete | Avg Loss: 0.383109 | Time: 152.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [77/200] Batch [10/18] Total: 0.375662 | Chamfer: 0.365677 | KL (Raw): 9.984562 | KL (Scaled): 0.009985 | Beta: 1.0000
+  Epoch [77/200] Batch [18/18] Total: 0.353215 | Chamfer: 0.343660 | KL (Raw): 9.555460 | KL (Scaled): 0.009555 | Beta: 1.0000
+Epoch 77/200 complete | Avg Loss: 0.380765 | Time: 149.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [78/200] Batch [10/18] Total: 0.394900 | Chamfer: 0.384109 | KL (Raw): 10.791105 | KL (Scaled): 0.010791 | Beta: 1.0000
+  Epoch [78/200] Batch [18/18] Total: 0.385147 | Chamfer: 0.376140 | KL (Raw): 9.007183 | KL (Scaled): 0.009007 | Beta: 1.0000
+Epoch 78/200 complete | Avg Loss: 0.380479 | Time: 152.6s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [79/200] Batch [10/18] Total: 0.368316 | Chamfer: 0.357077 | KL (Raw): 11.238092 | KL (Scaled): 0.011238 | Beta: 1.0000
+  Epoch [79/200] Batch [18/18] Total: 0.371565 | Chamfer: 0.362725 | KL (Raw): 8.839321 | KL (Scaled): 0.008839 | Beta: 1.0000
+Epoch 79/200 complete | Avg Loss: 0.379635 | Time: 151.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [80/200] Batch [10/18] Total: 0.374759 | Chamfer: 0.363183 | KL (Raw): 11.575567 | KL (Scaled): 0.011576 | Beta: 1.0000
+  Epoch [80/200] Batch [18/18] Total: 0.379616 | Chamfer: 0.370573 | KL (Raw): 9.043332 | KL (Scaled): 0.009043 | Beta: 1.0000
+Epoch 80/200 complete | Avg Loss: 0.379489 | Time: 152.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_80.pth
+
+  Epoch [81/200] Batch [10/18] Total: 0.381359 | Chamfer: 0.372269 | KL (Raw): 9.089430 | KL (Scaled): 0.009089 | Beta: 1.0000
+  Epoch [81/200] Batch [18/18] Total: 0.378070 | Chamfer: 0.369066 | KL (Raw): 9.004022 | KL (Scaled): 0.009004 | Beta: 1.0000
+Epoch 81/200 complete | Avg Loss: 0.377422 | Time: 153.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [82/200] Batch [10/18] Total: 0.369655 | Chamfer: 0.360854 | KL (Raw): 8.801252 | KL (Scaled): 0.008801 | Beta: 1.0000
+  Epoch [82/200] Batch [18/18] Total: 0.357317 | Chamfer: 0.347945 | KL (Raw): 9.371696 | KL (Scaled): 0.009372 | Beta: 1.0000
+Epoch 82/200 complete | Avg Loss: 0.377717 | Time: 153.7s
+
+  Epoch [83/200] Batch [10/18] Total: 0.371525 | Chamfer: 0.361970 | KL (Raw): 9.555058 | KL (Scaled): 0.009555 | Beta: 1.0000
+  Epoch [83/200] Batch [18/18] Total: 0.376784 | Chamfer: 0.368004 | KL (Raw): 8.779971 | KL (Scaled): 0.008780 | Beta: 1.0000
+Epoch 83/200 complete | Avg Loss: 0.377268 | Time: 147.9s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [84/200] Batch [10/18] Total: 0.377900 | Chamfer: 0.369297 | KL (Raw): 8.602882 | KL (Scaled): 0.008603 | Beta: 1.0000
+  Epoch [84/200] Batch [18/18] Total: 0.384049 | Chamfer: 0.375488 | KL (Raw): 8.560892 | KL (Scaled): 0.008561 | Beta: 1.0000
+Epoch 84/200 complete | Avg Loss: 0.377660 | Time: 149.3s
+
+  Epoch [85/200] Batch [10/18] Total: 0.353765 | Chamfer: 0.345015 | KL (Raw): 8.749634 | KL (Scaled): 0.008750 | Beta: 1.0000
+  Epoch [85/200] Batch [18/18] Total: 0.393450 | Chamfer: 0.384817 | KL (Raw): 8.633168 | KL (Scaled): 0.008633 | Beta: 1.0000
+Epoch 85/200 complete | Avg Loss: 0.375821 | Time: 152.9s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_85.pth
+
+  Epoch [86/200] Batch [10/18] Total: 0.371486 | Chamfer: 0.363647 | KL (Raw): 7.839055 | KL (Scaled): 0.007839 | Beta: 1.0000
+  Epoch [86/200] Batch [18/18] Total: 0.363841 | Chamfer: 0.353750 | KL (Raw): 10.091029 | KL (Scaled): 0.010091 | Beta: 1.0000
+Epoch 86/200 complete | Avg Loss: 0.374627 | Time: 153.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [87/200] Batch [10/18] Total: 0.360181 | Chamfer: 0.351800 | KL (Raw): 8.380999 | KL (Scaled): 0.008381 | Beta: 1.0000
+  Epoch [87/200] Batch [18/18] Total: 0.375081 | Chamfer: 0.363399 | KL (Raw): 11.681215 | KL (Scaled): 0.011681 | Beta: 1.0000
+Epoch 87/200 complete | Avg Loss: 0.372023 | Time: 152.9s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [88/200] Batch [10/18] Total: 0.372866 | Chamfer: 0.364514 | KL (Raw): 8.352131 | KL (Scaled): 0.008352 | Beta: 1.0000
+  Epoch [88/200] Batch [18/18] Total: 0.371290 | Chamfer: 0.362840 | KL (Raw): 8.449457 | KL (Scaled): 0.008449 | Beta: 1.0000
+Epoch 88/200 complete | Avg Loss: 0.373801 | Time: 150.1s
+
+  Epoch [89/200] Batch [10/18] Total: 0.363512 | Chamfer: 0.354922 | KL (Raw): 8.589740 | KL (Scaled): 0.008590 | Beta: 1.0000
+  Epoch [89/200] Batch [18/18] Total: 0.386546 | Chamfer: 0.378923 | KL (Raw): 7.622684 | KL (Scaled): 0.007623 | Beta: 1.0000
+Epoch 89/200 complete | Avg Loss: 0.369701 | Time: 149.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [90/200] Batch [10/18] Total: 0.347128 | Chamfer: 0.337721 | KL (Raw): 9.407562 | KL (Scaled): 0.009408 | Beta: 1.0000
+  Epoch [90/200] Batch [18/18] Total: 0.387880 | Chamfer: 0.380482 | KL (Raw): 7.398191 | KL (Scaled): 0.007398 | Beta: 1.0000
+Epoch 90/200 complete | Avg Loss: 0.371850 | Time: 148.7s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_90.pth
+
+  Epoch [91/200] Batch [10/18] Total: 0.372099 | Chamfer: 0.364633 | KL (Raw): 7.466250 | KL (Scaled): 0.007466 | Beta: 1.0000
+  Epoch [91/200] Batch [18/18] Total: 0.377929 | Chamfer: 0.370268 | KL (Raw): 7.660795 | KL (Scaled): 0.007661 | Beta: 1.0000
+Epoch 91/200 complete | Avg Loss: 0.371556 | Time: 147.8s
+
+  Epoch [92/200] Batch [10/18] Total: 0.357755 | Chamfer: 0.349417 | KL (Raw): 8.337837 | KL (Scaled): 0.008338 | Beta: 1.0000
+  Epoch [92/200] Batch [18/18] Total: 0.367416 | Chamfer: 0.359434 | KL (Raw): 7.981850 | KL (Scaled): 0.007982 | Beta: 1.0000
+Epoch 92/200 complete | Avg Loss: 0.368468 | Time: 151.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [93/200] Batch [10/18] Total: 0.376308 | Chamfer: 0.369468 | KL (Raw): 6.839803 | KL (Scaled): 0.006840 | Beta: 1.0000
+  Epoch [93/200] Batch [18/18] Total: 0.350171 | Chamfer: 0.342677 | KL (Raw): 7.494113 | KL (Scaled): 0.007494 | Beta: 1.0000
+Epoch 93/200 complete | Avg Loss: 0.366715 | Time: 149.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [94/200] Batch [10/18] Total: 0.349071 | Chamfer: 0.338659 | KL (Raw): 10.412251 | KL (Scaled): 0.010412 | Beta: 1.0000
+  Epoch [94/200] Batch [18/18] Total: 0.384444 | Chamfer: 0.377375 | KL (Raw): 7.069088 | KL (Scaled): 0.007069 | Beta: 1.0000
+Epoch 94/200 complete | Avg Loss: 0.366662 | Time: 154.9s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [95/200] Batch [10/18] Total: 0.375155 | Chamfer: 0.366385 | KL (Raw): 8.769377 | KL (Scaled): 0.008769 | Beta: 1.0000
+  Epoch [95/200] Batch [18/18] Total: 0.371326 | Chamfer: 0.362845 | KL (Raw): 8.481340 | KL (Scaled): 0.008481 | Beta: 1.0000
+Epoch 95/200 complete | Avg Loss: 0.365207 | Time: 152.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_95.pth
+
+  Epoch [96/200] Batch [10/18] Total: 0.346165 | Chamfer: 0.338253 | KL (Raw): 7.912532 | KL (Scaled): 0.007913 | Beta: 1.0000
+  Epoch [96/200] Batch [18/18] Total: 0.369385 | Chamfer: 0.360199 | KL (Raw): 9.186235 | KL (Scaled): 0.009186 | Beta: 1.0000
+Epoch 96/200 complete | Avg Loss: 0.363728 | Time: 150.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [97/200] Batch [10/18] Total: 0.366855 | Chamfer: 0.358017 | KL (Raw): 8.838367 | KL (Scaled): 0.008838 | Beta: 1.0000
+  Epoch [97/200] Batch [18/18] Total: 0.374068 | Chamfer: 0.366186 | KL (Raw): 7.881562 | KL (Scaled): 0.007882 | Beta: 1.0000
+Epoch 97/200 complete | Avg Loss: 0.361154 | Time: 152.8s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [98/200] Batch [10/18] Total: 0.342695 | Chamfer: 0.335239 | KL (Raw): 7.456365 | KL (Scaled): 0.007456 | Beta: 1.0000
+  Epoch [98/200] Batch [18/18] Total: 0.331494 | Chamfer: 0.323409 | KL (Raw): 8.084136 | KL (Scaled): 0.008084 | Beta: 1.0000
+Epoch 98/200 complete | Avg Loss: 0.360656 | Time: 148.8s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [99/200] Batch [10/18] Total: 0.378476 | Chamfer: 0.371057 | KL (Raw): 7.418512 | KL (Scaled): 0.007419 | Beta: 1.0000
+  Epoch [99/200] Batch [18/18] Total: 0.370687 | Chamfer: 0.362837 | KL (Raw): 7.849834 | KL (Scaled): 0.007850 | Beta: 1.0000
+Epoch 99/200 complete | Avg Loss: 0.356030 | Time: 152.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [100/200] Batch [10/18] Total: 0.350176 | Chamfer: 0.343065 | KL (Raw): 7.111468 | KL (Scaled): 0.007111 | Beta: 1.0000
+  Epoch [100/200] Batch [18/18] Total: 0.366123 | Chamfer: 0.358542 | KL (Raw): 7.580997 | KL (Scaled): 0.007581 | Beta: 1.0000
+Epoch 100/200 complete | Avg Loss: 0.356382 | Time: 146.6s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_100.pth
+
+  Epoch [101/200] Batch [10/18] Total: 0.383865 | Chamfer: 0.377081 | KL (Raw): 6.783386 | KL (Scaled): 0.006783 | Beta: 1.0000
+  Epoch [101/200] Batch [18/18] Total: 0.371861 | Chamfer: 0.364932 | KL (Raw): 6.928535 | KL (Scaled): 0.006929 | Beta: 1.0000
+Epoch 101/200 complete | Avg Loss: 0.355159 | Time: 145.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [102/200] Batch [10/18] Total: 0.342444 | Chamfer: 0.334850 | KL (Raw): 7.593576 | KL (Scaled): 0.007594 | Beta: 1.0000
+  Epoch [102/200] Batch [18/18] Total: 0.342104 | Chamfer: 0.334969 | KL (Raw): 7.134293 | KL (Scaled): 0.007134 | Beta: 1.0000
+Epoch 102/200 complete | Avg Loss: 0.353006 | Time: 153.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [103/200] Batch [10/18] Total: 0.374623 | Chamfer: 0.366849 | KL (Raw): 7.774024 | KL (Scaled): 0.007774 | Beta: 1.0000
+  Epoch [103/200] Batch [18/18] Total: 0.350598 | Chamfer: 0.343906 | KL (Raw): 6.691309 | KL (Scaled): 0.006691 | Beta: 1.0000
+Epoch 103/200 complete | Avg Loss: 0.351767 | Time: 151.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [104/200] Batch [10/18] Total: 0.351898 | Chamfer: 0.344291 | KL (Raw): 7.607222 | KL (Scaled): 0.007607 | Beta: 1.0000
+  Epoch [104/200] Batch [18/18] Total: 0.363494 | Chamfer: 0.355782 | KL (Raw): 7.711946 | KL (Scaled): 0.007712 | Beta: 1.0000
+Epoch 104/200 complete | Avg Loss: 0.349883 | Time: 149.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [105/200] Batch [10/18] Total: 0.327846 | Chamfer: 0.319555 | KL (Raw): 8.291114 | KL (Scaled): 0.008291 | Beta: 1.0000
+  Epoch [105/200] Batch [18/18] Total: 0.338959 | Chamfer: 0.329794 | KL (Raw): 9.164466 | KL (Scaled): 0.009164 | Beta: 1.0000
+Epoch 105/200 complete | Avg Loss: 0.345042 | Time: 146.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_105.pth
+
+  Epoch [106/200] Batch [10/18] Total: 0.357551 | Chamfer: 0.346142 | KL (Raw): 11.409100 | KL (Scaled): 0.011409 | Beta: 1.0000
+  Epoch [106/200] Batch [18/18] Total: 0.340312 | Chamfer: 0.332457 | KL (Raw): 7.855321 | KL (Scaled): 0.007855 | Beta: 1.0000
+Epoch 106/200 complete | Avg Loss: 0.345794 | Time: 148.3s
+
+  Epoch [107/200] Batch [10/18] Total: 0.342131 | Chamfer: 0.334190 | KL (Raw): 7.940987 | KL (Scaled): 0.007941 | Beta: 1.0000
+  Epoch [107/200] Batch [18/18] Total: 0.333725 | Chamfer: 0.323464 | KL (Raw): 10.260507 | KL (Scaled): 0.010261 | Beta: 1.0000
+Epoch 107/200 complete | Avg Loss: 0.345495 | Time: 153.2s
+
+  Epoch [108/200] Batch [10/18] Total: 0.347096 | Chamfer: 0.337909 | KL (Raw): 9.187270 | KL (Scaled): 0.009187 | Beta: 1.0000
+  Epoch [108/200] Batch [18/18] Total: 0.347797 | Chamfer: 0.337298 | KL (Raw): 10.499529 | KL (Scaled): 0.010500 | Beta: 1.0000
+Epoch 108/200 complete | Avg Loss: 0.342262 | Time: 152.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [109/200] Batch [10/18] Total: 0.347955 | Chamfer: 0.341583 | KL (Raw): 6.372320 | KL (Scaled): 0.006372 | Beta: 1.0000
+  Epoch [109/200] Batch [18/18] Total: 0.347082 | Chamfer: 0.340503 | KL (Raw): 6.579870 | KL (Scaled): 0.006580 | Beta: 1.0000
+Epoch 109/200 complete | Avg Loss: 0.340332 | Time: 149.1s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [110/200] Batch [10/18] Total: 0.318525 | Chamfer: 0.310571 | KL (Raw): 7.954046 | KL (Scaled): 0.007954 | Beta: 1.0000
+  Epoch [110/200] Batch [18/18] Total: 0.351502 | Chamfer: 0.343985 | KL (Raw): 7.516237 | KL (Scaled): 0.007516 | Beta: 1.0000
+Epoch 110/200 complete | Avg Loss: 0.337909 | Time: 149.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_110.pth
+
+  Epoch [111/200] Batch [10/18] Total: 0.333345 | Chamfer: 0.325851 | KL (Raw): 7.494180 | KL (Scaled): 0.007494 | Beta: 1.0000
+  Epoch [111/200] Batch [18/18] Total: 0.332987 | Chamfer: 0.325230 | KL (Raw): 7.757238 | KL (Scaled): 0.007757 | Beta: 1.0000
+Epoch 111/200 complete | Avg Loss: 0.337900 | Time: 153.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [112/200] Batch [10/18] Total: 0.326707 | Chamfer: 0.318849 | KL (Raw): 7.858707 | KL (Scaled): 0.007859 | Beta: 1.0000
+  Epoch [112/200] Batch [18/18] Total: 0.338505 | Chamfer: 0.330854 | KL (Raw): 7.650642 | KL (Scaled): 0.007651 | Beta: 1.0000
+Epoch 112/200 complete | Avg Loss: 0.334482 | Time: 152.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [113/200] Batch [10/18] Total: 0.356624 | Chamfer: 0.346580 | KL (Raw): 10.043877 | KL (Scaled): 0.010044 | Beta: 1.0000
+  Epoch [113/200] Batch [18/18] Total: 0.333657 | Chamfer: 0.326765 | KL (Raw): 6.891643 | KL (Scaled): 0.006892 | Beta: 1.0000
+Epoch 113/200 complete | Avg Loss: 0.333959 | Time: 154.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [114/200] Batch [10/18] Total: 0.339321 | Chamfer: 0.331022 | KL (Raw): 8.299117 | KL (Scaled): 0.008299 | Beta: 1.0000
+  Epoch [114/200] Batch [18/18] Total: 0.344449 | Chamfer: 0.337477 | KL (Raw): 6.971789 | KL (Scaled): 0.006972 | Beta: 1.0000
+Epoch 114/200 complete | Avg Loss: 0.333404 | Time: 152.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [115/200] Batch [10/18] Total: 0.341441 | Chamfer: 0.333479 | KL (Raw): 7.961725 | KL (Scaled): 0.007962 | Beta: 1.0000
+  Epoch [115/200] Batch [18/18] Total: 0.347740 | Chamfer: 0.339974 | KL (Raw): 7.766170 | KL (Scaled): 0.007766 | Beta: 1.0000
+Epoch 115/200 complete | Avg Loss: 0.330108 | Time: 151.9s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_115.pth
+
+  Epoch [116/200] Batch [10/18] Total: 0.318659 | Chamfer: 0.310938 | KL (Raw): 7.721264 | KL (Scaled): 0.007721 | Beta: 1.0000
+  Epoch [116/200] Batch [18/18] Total: 0.331575 | Chamfer: 0.323249 | KL (Raw): 8.325893 | KL (Scaled): 0.008326 | Beta: 1.0000
+Epoch 116/200 complete | Avg Loss: 0.330019 | Time: 147.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [117/200] Batch [10/18] Total: 0.335440 | Chamfer: 0.328315 | KL (Raw): 7.124653 | KL (Scaled): 0.007125 | Beta: 1.0000
+  Epoch [117/200] Batch [18/18] Total: 0.320785 | Chamfer: 0.312957 | KL (Raw): 7.828445 | KL (Scaled): 0.007828 | Beta: 1.0000
+Epoch 117/200 complete | Avg Loss: 0.328131 | Time: 151.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [118/200] Batch [10/18] Total: 0.328130 | Chamfer: 0.320923 | KL (Raw): 7.206817 | KL (Scaled): 0.007207 | Beta: 1.0000
+  Epoch [118/200] Batch [18/18] Total: 0.333245 | Chamfer: 0.325600 | KL (Raw): 7.645808 | KL (Scaled): 0.007646 | Beta: 1.0000
+Epoch 118/200 complete | Avg Loss: 0.328956 | Time: 152.9s
+
+  Epoch [119/200] Batch [10/18] Total: 0.352423 | Chamfer: 0.343998 | KL (Raw): 8.424992 | KL (Scaled): 0.008425 | Beta: 1.0000
+  Epoch [119/200] Batch [18/18] Total: 0.318161 | Chamfer: 0.309414 | KL (Raw): 8.747538 | KL (Scaled): 0.008748 | Beta: 1.0000
+Epoch 119/200 complete | Avg Loss: 0.324466 | Time: 153.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [120/200] Batch [10/18] Total: 0.316046 | Chamfer: 0.308959 | KL (Raw): 7.087855 | KL (Scaled): 0.007088 | Beta: 1.0000
+  Epoch [120/200] Batch [18/18] Total: 0.310593 | Chamfer: 0.301777 | KL (Raw): 8.816307 | KL (Scaled): 0.008816 | Beta: 1.0000
+Epoch 120/200 complete | Avg Loss: 0.324486 | Time: 144.9s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_120.pth
+
+  Epoch [121/200] Batch [10/18] Total: 0.328799 | Chamfer: 0.320545 | KL (Raw): 8.254248 | KL (Scaled): 0.008254 | Beta: 1.0000
+  Epoch [121/200] Batch [18/18] Total: 0.319466 | Chamfer: 0.311332 | KL (Raw): 8.133747 | KL (Scaled): 0.008134 | Beta: 1.0000
+Epoch 121/200 complete | Avg Loss: 0.325679 | Time: 151.2s
+
+  Epoch [122/200] Batch [10/18] Total: 0.334169 | Chamfer: 0.324124 | KL (Raw): 10.045491 | KL (Scaled): 0.010045 | Beta: 1.0000
+  Epoch [122/200] Batch [18/18] Total: 0.323972 | Chamfer: 0.315421 | KL (Raw): 8.550836 | KL (Scaled): 0.008551 | Beta: 1.0000
+Epoch 122/200 complete | Avg Loss: 0.323655 | Time: 152.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [123/200] Batch [10/18] Total: 0.313342 | Chamfer: 0.304583 | KL (Raw): 8.758895 | KL (Scaled): 0.008759 | Beta: 1.0000
+  Epoch [123/200] Batch [18/18] Total: 0.346176 | Chamfer: 0.337764 | KL (Raw): 8.412367 | KL (Scaled): 0.008412 | Beta: 1.0000
+Epoch 123/200 complete | Avg Loss: 0.322487 | Time: 151.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [124/200] Batch [10/18] Total: 0.358509 | Chamfer: 0.350270 | KL (Raw): 8.239029 | KL (Scaled): 0.008239 | Beta: 1.0000
+  Epoch [124/200] Batch [18/18] Total: 0.311696 | Chamfer: 0.303217 | KL (Raw): 8.478685 | KL (Scaled): 0.008479 | Beta: 1.0000
+Epoch 124/200 complete | Avg Loss: 0.322041 | Time: 151.4s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [125/200] Batch [10/18] Total: 0.332208 | Chamfer: 0.324149 | KL (Raw): 8.059249 | KL (Scaled): 0.008059 | Beta: 1.0000
+  Epoch [125/200] Batch [18/18] Total: 0.322677 | Chamfer: 0.315154 | KL (Raw): 7.522768 | KL (Scaled): 0.007523 | Beta: 1.0000
+Epoch 125/200 complete | Avg Loss: 0.319255 | Time: 148.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_125.pth
+
+  Epoch [126/200] Batch [10/18] Total: 0.315848 | Chamfer: 0.307456 | KL (Raw): 8.391340 | KL (Scaled): 0.008391 | Beta: 1.0000
+  Epoch [126/200] Batch [18/18] Total: 0.339362 | Chamfer: 0.331154 | KL (Raw): 8.207984 | KL (Scaled): 0.008208 | Beta: 1.0000
+Epoch 126/200 complete | Avg Loss: 0.321239 | Time: 150.4s
+
+  Epoch [127/200] Batch [10/18] Total: 0.313682 | Chamfer: 0.305035 | KL (Raw): 8.647018 | KL (Scaled): 0.008647 | Beta: 1.0000
+  Epoch [127/200] Batch [18/18] Total: 0.304604 | Chamfer: 0.295431 | KL (Raw): 9.172407 | KL (Scaled): 0.009172 | Beta: 1.0000
+Epoch 127/200 complete | Avg Loss: 0.317041 | Time: 153.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [128/200] Batch [10/18] Total: 0.324176 | Chamfer: 0.315015 | KL (Raw): 9.161660 | KL (Scaled): 0.009162 | Beta: 1.0000
+  Epoch [128/200] Batch [18/18] Total: 0.308197 | Chamfer: 0.299537 | KL (Raw): 8.659314 | KL (Scaled): 0.008659 | Beta: 1.0000
+Epoch 128/200 complete | Avg Loss: 0.322938 | Time: 152.7s
+
+  Epoch [129/200] Batch [10/18] Total: 0.321100 | Chamfer: 0.312693 | KL (Raw): 8.407019 | KL (Scaled): 0.008407 | Beta: 1.0000
+  Epoch [129/200] Batch [18/18] Total: 0.287982 | Chamfer: 0.279609 | KL (Raw): 8.372919 | KL (Scaled): 0.008373 | Beta: 1.0000
+Epoch 129/200 complete | Avg Loss: 0.319735 | Time: 149.4s
+
+  Epoch [130/200] Batch [10/18] Total: 0.350587 | Chamfer: 0.343188 | KL (Raw): 7.398596 | KL (Scaled): 0.007399 | Beta: 1.0000
+  Epoch [130/200] Batch [18/18] Total: 0.317647 | Chamfer: 0.309776 | KL (Raw): 7.870664 | KL (Scaled): 0.007871 | Beta: 1.0000
+Epoch 130/200 complete | Avg Loss: 0.317486 | Time: 151.8s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_130.pth
+
+  Epoch [131/200] Batch [10/18] Total: 0.319004 | Chamfer: 0.311130 | KL (Raw): 7.874261 | KL (Scaled): 0.007874 | Beta: 1.0000
+  Epoch [131/200] Batch [18/18] Total: 0.313541 | Chamfer: 0.305698 | KL (Raw): 7.842718 | KL (Scaled): 0.007843 | Beta: 1.0000
+Epoch 131/200 complete | Avg Loss: 0.316010 | Time: 152.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [132/200] Batch [10/18] Total: 0.312251 | Chamfer: 0.302128 | KL (Raw): 10.122540 | KL (Scaled): 0.010123 | Beta: 1.0000
+  Epoch [132/200] Batch [18/18] Total: 0.312450 | Chamfer: 0.303949 | KL (Raw): 8.501087 | KL (Scaled): 0.008501 | Beta: 1.0000
+Epoch 132/200 complete | Avg Loss: 0.315989 | Time: 151.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [133/200] Batch [10/18] Total: 0.298160 | Chamfer: 0.289130 | KL (Raw): 9.030785 | KL (Scaled): 0.009031 | Beta: 1.0000
+  Epoch [133/200] Batch [18/18] Total: 0.338853 | Chamfer: 0.329012 | KL (Raw): 9.840689 | KL (Scaled): 0.009841 | Beta: 1.0000
+Epoch 133/200 complete | Avg Loss: 0.312999 | Time: 150.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [134/200] Batch [10/18] Total: 0.317332 | Chamfer: 0.307853 | KL (Raw): 9.478895 | KL (Scaled): 0.009479 | Beta: 1.0000
+  Epoch [134/200] Batch [18/18] Total: 0.290629 | Chamfer: 0.282887 | KL (Raw): 7.741950 | KL (Scaled): 0.007742 | Beta: 1.0000
+Epoch 134/200 complete | Avg Loss: 0.315623 | Time: 151.7s
+
+  Epoch [135/200] Batch [10/18] Total: 0.296714 | Chamfer: 0.288703 | KL (Raw): 8.011565 | KL (Scaled): 0.008012 | Beta: 1.0000
+  Epoch [135/200] Batch [18/18] Total: 0.309418 | Chamfer: 0.301495 | KL (Raw): 7.922559 | KL (Scaled): 0.007923 | Beta: 1.0000
+Epoch 135/200 complete | Avg Loss: 0.313660 | Time: 152.4s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_135.pth
+
+  Epoch [136/200] Batch [10/18] Total: 0.331205 | Chamfer: 0.323189 | KL (Raw): 8.015787 | KL (Scaled): 0.008016 | Beta: 1.0000
+  Epoch [136/200] Batch [18/18] Total: 0.310517 | Chamfer: 0.303186 | KL (Raw): 7.330983 | KL (Scaled): 0.007331 | Beta: 1.0000
+Epoch 136/200 complete | Avg Loss: 0.313275 | Time: 152.8s
+
+  Epoch [137/200] Batch [10/18] Total: 0.307118 | Chamfer: 0.298380 | KL (Raw): 8.737572 | KL (Scaled): 0.008738 | Beta: 1.0000
+  Epoch [137/200] Batch [18/18] Total: 0.319352 | Chamfer: 0.310984 | KL (Raw): 8.368072 | KL (Scaled): 0.008368 | Beta: 1.0000
+Epoch 137/200 complete | Avg Loss: 0.315033 | Time: 150.0s
+
+  Epoch [138/200] Batch [10/18] Total: 0.297837 | Chamfer: 0.289400 | KL (Raw): 8.436449 | KL (Scaled): 0.008436 | Beta: 1.0000
+  Epoch [138/200] Batch [18/18] Total: 0.299293 | Chamfer: 0.291437 | KL (Raw): 7.856515 | KL (Scaled): 0.007857 | Beta: 1.0000
+Epoch 138/200 complete | Avg Loss: 0.312512 | Time: 150.8s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [139/200] Batch [10/18] Total: 0.309809 | Chamfer: 0.302088 | KL (Raw): 7.721626 | KL (Scaled): 0.007722 | Beta: 1.0000
+  Epoch [139/200] Batch [18/18] Total: 0.315689 | Chamfer: 0.307317 | KL (Raw): 8.372444 | KL (Scaled): 0.008372 | Beta: 1.0000
+Epoch 139/200 complete | Avg Loss: 0.312095 | Time: 152.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [140/200] Batch [10/18] Total: 0.317268 | Chamfer: 0.309004 | KL (Raw): 8.263842 | KL (Scaled): 0.008264 | Beta: 1.0000
+  Epoch [140/200] Batch [18/18] Total: 0.312662 | Chamfer: 0.304128 | KL (Raw): 8.533940 | KL (Scaled): 0.008534 | Beta: 1.0000
+Epoch 140/200 complete | Avg Loss: 0.310515 | Time: 150.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_140.pth
+
+  Epoch [141/200] Batch [10/18] Total: 0.317113 | Chamfer: 0.309092 | KL (Raw): 8.021165 | KL (Scaled): 0.008021 | Beta: 1.0000
+  Epoch [141/200] Batch [18/18] Total: 0.318597 | Chamfer: 0.311206 | KL (Raw): 7.391390 | KL (Scaled): 0.007391 | Beta: 1.0000
+Epoch 141/200 complete | Avg Loss: 0.312058 | Time: 151.3s
+
+  Epoch [142/200] Batch [10/18] Total: 0.296287 | Chamfer: 0.288214 | KL (Raw): 8.072434 | KL (Scaled): 0.008072 | Beta: 1.0000
+  Epoch [142/200] Batch [18/18] Total: 0.315594 | Chamfer: 0.307715 | KL (Raw): 7.878529 | KL (Scaled): 0.007879 | Beta: 1.0000
+Epoch 142/200 complete | Avg Loss: 0.309729 | Time: 152.5s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [143/200] Batch [10/18] Total: 0.342778 | Chamfer: 0.333545 | KL (Raw): 9.232709 | KL (Scaled): 0.009233 | Beta: 1.0000
+  Epoch [143/200] Batch [18/18] Total: 0.327997 | Chamfer: 0.320816 | KL (Raw): 7.181313 | KL (Scaled): 0.007181 | Beta: 1.0000
+Epoch 143/200 complete | Avg Loss: 0.309767 | Time: 147.4s
+
+  Epoch [144/200] Batch [10/18] Total: 0.292354 | Chamfer: 0.284294 | KL (Raw): 8.060119 | KL (Scaled): 0.008060 | Beta: 1.0000
+  Epoch [144/200] Batch [18/18] Total: 0.292289 | Chamfer: 0.284395 | KL (Raw): 7.893640 | KL (Scaled): 0.007894 | Beta: 1.0000
+Epoch 144/200 complete | Avg Loss: 0.308823 | Time: 153.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [145/200] Batch [10/18] Total: 0.319186 | Chamfer: 0.309963 | KL (Raw): 9.222815 | KL (Scaled): 0.009223 | Beta: 1.0000
+  Epoch [145/200] Batch [18/18] Total: 0.312375 | Chamfer: 0.305047 | KL (Raw): 7.327644 | KL (Scaled): 0.007328 | Beta: 1.0000
+Epoch 145/200 complete | Avg Loss: 0.307126 | Time: 151.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_145.pth
+
+  Epoch [146/200] Batch [10/18] Total: 0.308800 | Chamfer: 0.301061 | KL (Raw): 7.738653 | KL (Scaled): 0.007739 | Beta: 1.0000
+  Epoch [146/200] Batch [18/18] Total: 0.319909 | Chamfer: 0.311523 | KL (Raw): 8.385979 | KL (Scaled): 0.008386 | Beta: 1.0000
+Epoch 146/200 complete | Avg Loss: 0.309393 | Time: 153.1s
+
+  Epoch [147/200] Batch [10/18] Total: 0.290949 | Chamfer: 0.282763 | KL (Raw): 8.185776 | KL (Scaled): 0.008186 | Beta: 1.0000
+  Epoch [147/200] Batch [18/18] Total: 0.298485 | Chamfer: 0.290815 | KL (Raw): 7.669786 | KL (Scaled): 0.007670 | Beta: 1.0000
+Epoch 147/200 complete | Avg Loss: 0.309064 | Time: 152.5s
+
+  Epoch [148/200] Batch [10/18] Total: 0.308070 | Chamfer: 0.298850 | KL (Raw): 9.219971 | KL (Scaled): 0.009220 | Beta: 1.0000
+  Epoch [148/200] Batch [18/18] Total: 0.301955 | Chamfer: 0.294231 | KL (Raw): 7.723840 | KL (Scaled): 0.007724 | Beta: 1.0000
+Epoch 148/200 complete | Avg Loss: 0.309207 | Time: 150.7s
+
+  Epoch [149/200] Batch [10/18] Total: 0.288236 | Chamfer: 0.279958 | KL (Raw): 8.278260 | KL (Scaled): 0.008278 | Beta: 1.0000
+  Epoch [149/200] Batch [18/18] Total: 0.297056 | Chamfer: 0.288531 | KL (Raw): 8.525398 | KL (Scaled): 0.008525 | Beta: 1.0000
+Epoch 149/200 complete | Avg Loss: 0.310141 | Time: 150.4s
+
+  Epoch [150/200] Batch [10/18] Total: 0.311512 | Chamfer: 0.304593 | KL (Raw): 6.918783 | KL (Scaled): 0.006919 | Beta: 1.0000
+  Epoch [150/200] Batch [18/18] Total: 0.319884 | Chamfer: 0.312231 | KL (Raw): 7.652519 | KL (Scaled): 0.007653 | Beta: 1.0000
+Epoch 150/200 complete | Avg Loss: 0.307866 | Time: 153.9s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_150.pth
+
+  Epoch [151/200] Batch [10/18] Total: 0.315671 | Chamfer: 0.307040 | KL (Raw): 8.631650 | KL (Scaled): 0.008632 | Beta: 1.0000
+  Epoch [151/200] Batch [18/18] Total: 0.316724 | Chamfer: 0.309742 | KL (Raw): 6.982674 | KL (Scaled): 0.006983 | Beta: 1.0000
+Epoch 151/200 complete | Avg Loss: 0.305609 | Time: 148.6s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [152/200] Batch [10/18] Total: 0.303593 | Chamfer: 0.295492 | KL (Raw): 8.100615 | KL (Scaled): 0.008101 | Beta: 1.0000
+  Epoch [152/200] Batch [18/18] Total: 0.311632 | Chamfer: 0.302543 | KL (Raw): 9.089299 | KL (Scaled): 0.009089 | Beta: 1.0000
+Epoch 152/200 complete | Avg Loss: 0.306638 | Time: 151.5s
+
+  Epoch [153/200] Batch [10/18] Total: 0.317606 | Chamfer: 0.310037 | KL (Raw): 7.569143 | KL (Scaled): 0.007569 | Beta: 1.0000
+  Epoch [153/200] Batch [18/18] Total: 0.306403 | Chamfer: 0.298742 | KL (Raw): 7.660620 | KL (Scaled): 0.007661 | Beta: 1.0000
+Epoch 153/200 complete | Avg Loss: 0.305315 | Time: 145.2s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [154/200] Batch [10/18] Total: 0.318415 | Chamfer: 0.310500 | KL (Raw): 7.914834 | KL (Scaled): 0.007915 | Beta: 1.0000
+  Epoch [154/200] Batch [18/18] Total: 0.307431 | Chamfer: 0.299401 | KL (Raw): 8.030529 | KL (Scaled): 0.008031 | Beta: 1.0000
+Epoch 154/200 complete | Avg Loss: 0.307360 | Time: 150.7s
+
+  Epoch [155/200] Batch [10/18] Total: 0.312997 | Chamfer: 0.304748 | KL (Raw): 8.248683 | KL (Scaled): 0.008249 | Beta: 1.0000
+  Epoch [155/200] Batch [18/18] Total: 0.316486 | Chamfer: 0.309037 | KL (Raw): 7.449077 | KL (Scaled): 0.007449 | Beta: 1.0000
+Epoch 155/200 complete | Avg Loss: 0.307363 | Time: 152.5s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_155.pth
+
+  Epoch [156/200] Batch [10/18] Total: 0.300428 | Chamfer: 0.293238 | KL (Raw): 7.189503 | KL (Scaled): 0.007190 | Beta: 1.0000
+  Epoch [156/200] Batch [18/18] Total: 0.320526 | Chamfer: 0.312239 | KL (Raw): 8.286885 | KL (Scaled): 0.008287 | Beta: 1.0000
+Epoch 156/200 complete | Avg Loss: 0.305087 | Time: 153.8s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [157/200] Batch [10/18] Total: 0.317944 | Chamfer: 0.310246 | KL (Raw): 7.697865 | KL (Scaled): 0.007698 | Beta: 1.0000
+  Epoch [157/200] Batch [18/18] Total: 0.328260 | Chamfer: 0.320860 | KL (Raw): 7.399766 | KL (Scaled): 0.007400 | Beta: 1.0000
+Epoch 157/200 complete | Avg Loss: 0.306588 | Time: 147.8s
+
+  Epoch [158/200] Batch [10/18] Total: 0.288400 | Chamfer: 0.279339 | KL (Raw): 9.060362 | KL (Scaled): 0.009060 | Beta: 1.0000
+  Epoch [158/200] Batch [18/18] Total: 0.308192 | Chamfer: 0.300506 | KL (Raw): 7.686634 | KL (Scaled): 0.007687 | Beta: 1.0000
+Epoch 158/200 complete | Avg Loss: 0.303116 | Time: 152.8s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [159/200] Batch [10/18] Total: 0.310907 | Chamfer: 0.303683 | KL (Raw): 7.223351 | KL (Scaled): 0.007223 | Beta: 1.0000
+  Epoch [159/200] Batch [18/18] Total: 0.329965 | Chamfer: 0.322864 | KL (Raw): 7.101030 | KL (Scaled): 0.007101 | Beta: 1.0000
+Epoch 159/200 complete | Avg Loss: 0.305600 | Time: 155.1s
+
+  Epoch [160/200] Batch [10/18] Total: 0.301256 | Chamfer: 0.292251 | KL (Raw): 9.005407 | KL (Scaled): 0.009005 | Beta: 1.0000
+  Epoch [160/200] Batch [18/18] Total: 0.312059 | Chamfer: 0.303855 | KL (Raw): 8.204321 | KL (Scaled): 0.008204 | Beta: 1.0000
+Epoch 160/200 complete | Avg Loss: 0.305289 | Time: 152.1s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_160.pth
+
+  Epoch [161/200] Batch [10/18] Total: 0.315088 | Chamfer: 0.306471 | KL (Raw): 8.616802 | KL (Scaled): 0.008617 | Beta: 1.0000
+  Epoch [161/200] Batch [18/18] Total: 0.302169 | Chamfer: 0.294389 | KL (Raw): 7.779900 | KL (Scaled): 0.007780 | Beta: 1.0000
+Epoch 161/200 complete | Avg Loss: 0.305746 | Time: 154.2s
+
+  Epoch [162/200] Batch [10/18] Total: 0.310835 | Chamfer: 0.303283 | KL (Raw): 7.552866 | KL (Scaled): 0.007553 | Beta: 1.0000
+  Epoch [162/200] Batch [18/18] Total: 0.302594 | Chamfer: 0.294557 | KL (Raw): 8.037566 | KL (Scaled): 0.008038 | Beta: 1.0000
+Epoch 162/200 complete | Avg Loss: 0.304429 | Time: 153.4s
+
+  Epoch [163/200] Batch [10/18] Total: 0.301401 | Chamfer: 0.294451 | KL (Raw): 6.949897 | KL (Scaled): 0.006950 | Beta: 1.0000
+  Epoch [163/200] Batch [18/18] Total: 0.300556 | Chamfer: 0.292563 | KL (Raw): 7.993156 | KL (Scaled): 0.007993 | Beta: 1.0000
+Epoch 163/200 complete | Avg Loss: 0.301347 | Time: 148.8s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [164/200] Batch [10/18] Total: 0.315912 | Chamfer: 0.308874 | KL (Raw): 7.037669 | KL (Scaled): 0.007038 | Beta: 1.0000
+  Epoch [164/200] Batch [18/18] Total: 0.309859 | Chamfer: 0.300793 | KL (Raw): 9.066982 | KL (Scaled): 0.009067 | Beta: 1.0000
+Epoch 164/200 complete | Avg Loss: 0.304953 | Time: 152.4s
+
+  Epoch [165/200] Batch [10/18] Total: 0.306426 | Chamfer: 0.299261 | KL (Raw): 7.164368 | KL (Scaled): 0.007164 | Beta: 1.0000
+  Epoch [165/200] Batch [18/18] Total: 0.310244 | Chamfer: 0.302132 | KL (Raw): 8.112565 | KL (Scaled): 0.008113 | Beta: 1.0000
+Epoch 165/200 complete | Avg Loss: 0.302112 | Time: 151.2s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_165.pth
+
+  Epoch [166/200] Batch [10/18] Total: 0.308375 | Chamfer: 0.300088 | KL (Raw): 8.287447 | KL (Scaled): 0.008287 | Beta: 1.0000
+  Epoch [166/200] Batch [18/18] Total: 0.324834 | Chamfer: 0.317492 | KL (Raw): 7.341725 | KL (Scaled): 0.007342 | Beta: 1.0000
+Epoch 166/200 complete | Avg Loss: 0.303068 | Time: 150.2s
+
+  Epoch [167/200] Batch [10/18] Total: 0.301391 | Chamfer: 0.294141 | KL (Raw): 7.250619 | KL (Scaled): 0.007251 | Beta: 1.0000
+  Epoch [167/200] Batch [18/18] Total: 0.300200 | Chamfer: 0.290573 | KL (Raw): 9.627457 | KL (Scaled): 0.009627 | Beta: 1.0000
+Epoch 167/200 complete | Avg Loss: 0.303377 | Time: 151.8s
+
+  Epoch [168/200] Batch [10/18] Total: 0.313284 | Chamfer: 0.305399 | KL (Raw): 7.884833 | KL (Scaled): 0.007885 | Beta: 1.0000
+  Epoch [168/200] Batch [18/18] Total: 0.285798 | Chamfer: 0.277580 | KL (Raw): 8.217793 | KL (Scaled): 0.008218 | Beta: 1.0000
+Epoch 168/200 complete | Avg Loss: 0.302293 | Time: 152.4s
+
+  Epoch [169/200] Batch [10/18] Total: 0.316801 | Chamfer: 0.307972 | KL (Raw): 8.828198 | KL (Scaled): 0.008828 | Beta: 1.0000
+  Epoch [169/200] Batch [18/18] Total: 0.313085 | Chamfer: 0.305693 | KL (Raw): 7.392190 | KL (Scaled): 0.007392 | Beta: 1.0000
+Epoch 169/200 complete | Avg Loss: 0.302236 | Time: 153.3s
+
+  Epoch [170/200] Batch [10/18] Total: 0.310997 | Chamfer: 0.303541 | KL (Raw): 7.455317 | KL (Scaled): 0.007455 | Beta: 1.0000
+  Epoch [170/200] Batch [18/18] Total: 0.292351 | Chamfer: 0.284298 | KL (Raw): 8.052986 | KL (Scaled): 0.008053 | Beta: 1.0000
+Epoch 170/200 complete | Avg Loss: 0.302813 | Time: 152.1s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_170.pth
+
+  Epoch [171/200] Batch [10/18] Total: 0.312540 | Chamfer: 0.304663 | KL (Raw): 7.876816 | KL (Scaled): 0.007877 | Beta: 1.0000
+  Epoch [171/200] Batch [18/18] Total: 0.306036 | Chamfer: 0.298820 | KL (Raw): 7.215287 | KL (Scaled): 0.007215 | Beta: 1.0000
+Epoch 171/200 complete | Avg Loss: 0.300581 | Time: 151.3s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [172/200] Batch [10/18] Total: 0.302287 | Chamfer: 0.295015 | KL (Raw): 7.271545 | KL (Scaled): 0.007272 | Beta: 1.0000
+  Epoch [172/200] Batch [18/18] Total: 0.281249 | Chamfer: 0.273360 | KL (Raw): 7.888940 | KL (Scaled): 0.007889 | Beta: 1.0000
+Epoch 172/200 complete | Avg Loss: 0.301638 | Time: 149.7s
+
+  Epoch [173/200] Batch [10/18] Total: 0.294266 | Chamfer: 0.286534 | KL (Raw): 7.731708 | KL (Scaled): 0.007732 | Beta: 1.0000
+  Epoch [173/200] Batch [18/18] Total: 0.340985 | Chamfer: 0.334114 | KL (Raw): 6.871345 | KL (Scaled): 0.006871 | Beta: 1.0000
+Epoch 173/200 complete | Avg Loss: 0.302090 | Time: 152.7s
+
+  Epoch [174/200] Batch [10/18] Total: 0.304756 | Chamfer: 0.297653 | KL (Raw): 7.103002 | KL (Scaled): 0.007103 | Beta: 1.0000
+  Epoch [174/200] Batch [18/18] Total: 0.298678 | Chamfer: 0.291429 | KL (Raw): 7.249714 | KL (Scaled): 0.007250 | Beta: 1.0000
+Epoch 174/200 complete | Avg Loss: 0.299555 | Time: 152.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [175/200] Batch [10/18] Total: 0.283473 | Chamfer: 0.274987 | KL (Raw): 8.486373 | KL (Scaled): 0.008486 | Beta: 1.0000
+  Epoch [175/200] Batch [18/18] Total: 0.305361 | Chamfer: 0.298052 | KL (Raw): 7.309231 | KL (Scaled): 0.007309 | Beta: 1.0000
+Epoch 175/200 complete | Avg Loss: 0.300069 | Time: 151.1s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_175.pth
+
+  Epoch [176/200] Batch [10/18] Total: 0.312958 | Chamfer: 0.305915 | KL (Raw): 7.042940 | KL (Scaled): 0.007043 | Beta: 1.0000
+  Epoch [176/200] Batch [18/18] Total: 0.314331 | Chamfer: 0.307015 | KL (Raw): 7.315963 | KL (Scaled): 0.007316 | Beta: 1.0000
+Epoch 176/200 complete | Avg Loss: 0.300433 | Time: 149.2s
+
+  Epoch [177/200] Batch [10/18] Total: 0.312581 | Chamfer: 0.305265 | KL (Raw): 7.315951 | KL (Scaled): 0.007316 | Beta: 1.0000
+  Epoch [177/200] Batch [18/18] Total: 0.290764 | Chamfer: 0.283554 | KL (Raw): 7.210660 | KL (Scaled): 0.007211 | Beta: 1.0000
+Epoch 177/200 complete | Avg Loss: 0.301094 | Time: 153.5s
+
+  Epoch [178/200] Batch [10/18] Total: 0.308995 | Chamfer: 0.302128 | KL (Raw): 6.866467 | KL (Scaled): 0.006866 | Beta: 1.0000
+  Epoch [178/200] Batch [18/18] Total: 0.305642 | Chamfer: 0.298749 | KL (Raw): 6.892838 | KL (Scaled): 0.006893 | Beta: 1.0000
+Epoch 178/200 complete | Avg Loss: 0.303224 | Time: 148.7s
+
+  Epoch [179/200] Batch [10/18] Total: 0.288046 | Chamfer: 0.280884 | KL (Raw): 7.161653 | KL (Scaled): 0.007162 | Beta: 1.0000
+  Epoch [179/200] Batch [18/18] Total: 0.301757 | Chamfer: 0.295324 | KL (Raw): 6.433583 | KL (Scaled): 0.006434 | Beta: 1.0000
+Epoch 179/200 complete | Avg Loss: 0.301118 | Time: 153.1s
+
+  Epoch [180/200] Batch [10/18] Total: 0.300963 | Chamfer: 0.293169 | KL (Raw): 7.793380 | KL (Scaled): 0.007793 | Beta: 1.0000
+  Epoch [180/200] Batch [18/18] Total: 0.296245 | Chamfer: 0.287790 | KL (Raw): 8.455370 | KL (Scaled): 0.008455 | Beta: 1.0000
+Epoch 180/200 complete | Avg Loss: 0.297808 | Time: 151.8s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_180.pth
+
+  Epoch [181/200] Batch [10/18] Total: 0.283694 | Chamfer: 0.276603 | KL (Raw): 7.091785 | KL (Scaled): 0.007092 | Beta: 1.0000
+  Epoch [181/200] Batch [18/18] Total: 0.294101 | Chamfer: 0.285485 | KL (Raw): 8.615790 | KL (Scaled): 0.008616 | Beta: 1.0000
+Epoch 181/200 complete | Avg Loss: 0.299736 | Time: 149.3s
+
+  Epoch [182/200] Batch [10/18] Total: 0.300682 | Chamfer: 0.293313 | KL (Raw): 7.368949 | KL (Scaled): 0.007369 | Beta: 1.0000
+  Epoch [182/200] Batch [18/18] Total: 0.294682 | Chamfer: 0.287264 | KL (Raw): 7.417991 | KL (Scaled): 0.007418 | Beta: 1.0000
+Epoch 182/200 complete | Avg Loss: 0.297479 | Time: 149.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [183/200] Batch [10/18] Total: 0.296023 | Chamfer: 0.288826 | KL (Raw): 7.197029 | KL (Scaled): 0.007197 | Beta: 1.0000
+  Epoch [183/200] Batch [18/18] Total: 0.311173 | Chamfer: 0.303721 | KL (Raw): 7.452475 | KL (Scaled): 0.007452 | Beta: 1.0000
+Epoch 183/200 complete | Avg Loss: 0.300285 | Time: 153.0s
+
+  Epoch [184/200] Batch [10/18] Total: 0.288058 | Chamfer: 0.280856 | KL (Raw): 7.202488 | KL (Scaled): 0.007202 | Beta: 1.0000
+  Epoch [184/200] Batch [18/18] Total: 0.320014 | Chamfer: 0.313053 | KL (Raw): 6.960390 | KL (Scaled): 0.006960 | Beta: 1.0000
+Epoch 184/200 complete | Avg Loss: 0.299417 | Time: 146.2s
+
+  Epoch [185/200] Batch [10/18] Total: 0.323013 | Chamfer: 0.316939 | KL (Raw): 6.074584 | KL (Scaled): 0.006075 | Beta: 1.0000
+  Epoch [185/200] Batch [18/18] Total: 0.294246 | Chamfer: 0.287026 | KL (Raw): 7.219638 | KL (Scaled): 0.007220 | Beta: 1.0000
+Epoch 185/200 complete | Avg Loss: 0.298786 | Time: 153.0s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_185.pth
+
+  Epoch [186/200] Batch [10/18] Total: 0.333770 | Chamfer: 0.326545 | KL (Raw): 7.224829 | KL (Scaled): 0.007225 | Beta: 1.0000
+  Epoch [186/200] Batch [18/18] Total: 0.296505 | Chamfer: 0.288523 | KL (Raw): 7.982197 | KL (Scaled): 0.007982 | Beta: 1.0000
+Epoch 186/200 complete | Avg Loss: 0.299147 | Time: 151.0s
+
+  Epoch [187/200] Batch [10/18] Total: 0.318419 | Chamfer: 0.311309 | KL (Raw): 7.110564 | KL (Scaled): 0.007111 | Beta: 1.0000
+  Epoch [187/200] Batch [18/18] Total: 0.280419 | Chamfer: 0.273649 | KL (Raw): 6.769452 | KL (Scaled): 0.006769 | Beta: 1.0000
+Epoch 187/200 complete | Avg Loss: 0.298172 | Time: 152.6s
+
+  Epoch [188/200] Batch [10/18] Total: 0.298159 | Chamfer: 0.290632 | KL (Raw): 7.526384 | KL (Scaled): 0.007526 | Beta: 1.0000
+  Epoch [188/200] Batch [18/18] Total: 0.294896 | Chamfer: 0.286891 | KL (Raw): 8.004566 | KL (Scaled): 0.008005 | Beta: 1.0000
+Epoch 188/200 complete | Avg Loss: 0.296985 | Time: 146.9s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [189/200] Batch [10/18] Total: 0.301731 | Chamfer: 0.294749 | KL (Raw): 6.982242 | KL (Scaled): 0.006982 | Beta: 1.0000
+  Epoch [189/200] Batch [18/18] Total: 0.307428 | Chamfer: 0.300618 | KL (Raw): 6.810432 | KL (Scaled): 0.006810 | Beta: 1.0000
+Epoch 189/200 complete | Avg Loss: 0.297546 | Time: 149.4s
+
+  Epoch [190/200] Batch [10/18] Total: 0.282809 | Chamfer: 0.275859 | KL (Raw): 6.950502 | KL (Scaled): 0.006951 | Beta: 1.0000
+  Epoch [190/200] Batch [18/18] Total: 0.303660 | Chamfer: 0.295821 | KL (Raw): 7.839034 | KL (Scaled): 0.007839 | Beta: 1.0000
+Epoch 190/200 complete | Avg Loss: 0.296388 | Time: 149.4s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_190.pth
+
+  Epoch [191/200] Batch [10/18] Total: 0.317699 | Chamfer: 0.310609 | KL (Raw): 7.090710 | KL (Scaled): 0.007091 | Beta: 1.0000
+  Epoch [191/200] Batch [18/18] Total: 0.279408 | Chamfer: 0.272122 | KL (Raw): 7.285474 | KL (Scaled): 0.007285 | Beta: 1.0000
+Epoch 191/200 complete | Avg Loss: 0.297262 | Time: 154.6s
+
+  Epoch [192/200] Batch [10/18] Total: 0.297976 | Chamfer: 0.290152 | KL (Raw): 7.823808 | KL (Scaled): 0.007824 | Beta: 1.0000
+  Epoch [192/200] Batch [18/18] Total: 0.292423 | Chamfer: 0.284691 | KL (Raw): 7.732158 | KL (Scaled): 0.007732 | Beta: 1.0000
+Epoch 192/200 complete | Avg Loss: 0.297397 | Time: 151.7s
+
+  Epoch [193/200] Batch [10/18] Total: 0.281790 | Chamfer: 0.274457 | KL (Raw): 7.332866 | KL (Scaled): 0.007333 | Beta: 1.0000
+  Epoch [193/200] Batch [18/18] Total: 0.293348 | Chamfer: 0.286406 | KL (Raw): 6.941646 | KL (Scaled): 0.006942 | Beta: 1.0000
+Epoch 193/200 complete | Avg Loss: 0.294875 | Time: 154.7s
+  Saved best model checkpoint to checkpoints\best_model.pth
+
+  Epoch [194/200] Batch [10/18] Total: 0.308751 | Chamfer: 0.301635 | KL (Raw): 7.116024 | KL (Scaled): 0.007116 | Beta: 1.0000
+  Epoch [194/200] Batch [18/18] Total: 0.294857 | Chamfer: 0.287532 | KL (Raw): 7.325603 | KL (Scaled): 0.007326 | Beta: 1.0000
+Epoch 194/200 complete | Avg Loss: 0.296110 | Time: 153.8s
+
+  Epoch [195/200] Batch [10/18] Total: 0.290198 | Chamfer: 0.282203 | KL (Raw): 7.994278 | KL (Scaled): 0.007994 | Beta: 1.0000
+  Epoch [195/200] Batch [18/18] Total: 0.299288 | Chamfer: 0.292655 | KL (Raw): 6.632942 | KL (Scaled): 0.006633 | Beta: 1.0000
+Epoch 195/200 complete | Avg Loss: 0.294990 | Time: 153.6s
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_195.pth
+
+  Epoch [196/200] Batch [10/18] Total: 0.282872 | Chamfer: 0.275304 | KL (Raw): 7.568447 | KL (Scaled): 0.007568 | Beta: 1.0000
+  Epoch [196/200] Batch [18/18] Total: 0.286492 | Chamfer: 0.279549 | KL (Raw): 6.942473 | KL (Scaled): 0.006942 | Beta: 1.0000
+Epoch 196/200 complete | Avg Loss: 0.295362 | Time: 148.9s
+
+  Epoch [197/200] Batch [10/18] Total: 0.280936 | Chamfer: 0.273230 | KL (Raw): 7.706252 | KL (Scaled): 0.007706 | Beta: 1.0000
+  Epoch [197/200] Batch [18/18] Total: 0.297175 | Chamfer: 0.289380 | KL (Raw): 7.794530 | KL (Scaled): 0.007795 | Beta: 1.0000
+Epoch 197/200 complete | Avg Loss: 0.295693 | Time: 150.4s
+
+  Epoch [198/200] Batch [10/18] Total: 0.291366 | Chamfer: 0.284409 | KL (Raw): 6.956367 | KL (Scaled): 0.006956 | Beta: 1.0000
+  Epoch [198/200] Batch [18/18] Total: 0.285954 | Chamfer: 0.278705 | KL (Raw): 7.248947 | KL (Scaled): 0.007249 | Beta: 1.0000
+Epoch 198/200 complete | Avg Loss: 0.295119 | Time: 168.1s
+
+  Epoch [199/200] Batch [10/18] Total: 0.292453 | Chamfer: 0.284989 | KL (Raw): 7.464949 | KL (Scaled): 0.007465 | Beta: 1.0000
+  Epoch [199/200] Batch [18/18] Total: 0.318485 | Chamfer: 0.311158 | KL (Raw): 7.326668 | KL (Scaled): 0.007327 | Beta: 1.0000
+Epoch 199/200 complete | Avg Loss: 0.295332 | Time: 156.3s
+
+  Epoch [200/200] Batch [10/18] Total: 0.295358 | Chamfer: 0.288060 | KL (Raw): 7.297248 | KL (Scaled): 0.007297 | Beta: 1.0000
+  Epoch [200/200] Batch [18/18] Total: 0.292260 | Chamfer: 0.285008 | KL (Raw): 7.251999 | KL (Scaled): 0.007252 | Beta: 1.0000
+Epoch 200/200 complete | Avg Loss: 0.294521 | Time: 156.0s
+  Saved best model checkpoint to checkpoints\best_model.pth
+  Saved periodic checkpoint to checkpoints\checkpoint_epoch_200.pth
+
+Training finished. Best Chamfer Loss: 0.294521
