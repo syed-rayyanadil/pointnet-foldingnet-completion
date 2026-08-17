@@ -46,7 +46,7 @@ Evaluated on the ModelNet40 test split (`chair` category), Chamfer Distance (CD,
 ### Training Dynamics
 
 ![Loss Curve](results/loss_curve.png)
-*(Chamfer Distance and scaled KL loss vs epoch, demonstrating stable VAE convergence over 200 epochs)*
+*(Chamfer Distance vs epoch, demonstrating stable VAE convergence over 200 epochs)*
 
 ---
 
