@@ -84,7 +84,10 @@ pip install -r requirements.txt
 
 **Dataset:** Download ModelNet40 from [modelnet.cs.princeton.edu](https://modelnet.cs.princeton.edu/) and place under `data/ModelNet40/`. The dataset loader expects the standard category/split/.off structure.
 
-**Interactive Colab Notebook:** Open [`Point_Cloud_Completion_with_Uncertainty_Estimation.ipynb`](Point_Cloud_Completion_with_Uncertainty_Estimation.ipynb) for step-by-step evaluation and 3D visualization.
+**Interactive Colab Notebook:** Open [`evaluation_and_demo.ipynb`](evaluation_and_demo.ipynb) for step-by-step evaluation and 3D visualization.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/syed-rayyanadil/pointnet-foldingnet-completion/blob/main/evaluation_and_demo.ipynb)
+
 ---
 
 ## Usage
