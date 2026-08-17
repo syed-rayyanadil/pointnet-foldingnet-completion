@@ -19,7 +19,6 @@ The pipeline proceeds as follows:
 5. Training minimizes Chamfer Distance (CD) reconstruction loss plus a $\beta$-scaled KL divergence term [5] (scaled by $10^{-3}$, i.e., $10^{-3} \cdot \beta \cdot \text{KL}$), with linear $\beta$ annealing from 0 to 1 over the first 50 epochs to prevent posterior collapse.
 
 ![Architecture Diagram](results/architecture_diagram.jpg)
-*(Recommended: draw.io or Figma diagram showing SA layers → μ/σ heads → reparameterization → FoldingNet grid deformation → output cloud + uncertainty map)*
 
 ---
 
